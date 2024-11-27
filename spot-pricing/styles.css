@@ -105,7 +105,17 @@ tr:hover {
     box-sizing: border-box;
 }
 
-#monthYearSelector, #sortSelector {
+#monthYearSelector {
+    width: 200px;
+    padding: 8px;
+    margin: 10px auto;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#sortSelector {
     width: 200px;
     padding: 8px;
     margin: 10px 5px;

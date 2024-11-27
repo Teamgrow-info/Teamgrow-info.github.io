@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Cloud Compute Engine Pricing</title>
+    <title>Google Cloud Compute Engine Spot VMs Tracker</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Google Cloud Compute Engine Pricing</h1>
+        <h1>Google Cloud Compute Engine Spot VMs Tracker</h1>
         <div class="contact-box">
-            Contact me
+            Need to optimize your Google Cloud Platform costs ?<br/>
+            <a href="https://calendly.com/julien-cartigny/discussion-de-votre-projet">Let's discuss about it !</a>
         </div>
         <div class="info-text">
-            GNAGNAGNA
+            Just a few remarks:
+            <ul>
+                <li>No guarantee whatsoever, use at your own risk</li>
+                <li>The prices are based on standard configuration, not custom</li><li>Core On-Demand: Price per core for on-demand instances</li>
+            </ul>
         </div>
         <div class="selector-container">
             <select id="monthYearSelector"></select>
@@ -28,14 +33,14 @@
         <table>
             <thead>
                 <tr class="header">
-                    <th>Type</th>
-                    <th>Region</th>
-                    <th>Core On-Demand</th>
-                    <th>Core Spot</th>
-                    <th>Core Savings</th>
-                    <th>RAM On-Demand</th>
-                    <th>RAM Spot</th>
-                    <th>RAM Savings</th>
+                    <th class="sort-header" data-sort="type">Type</th>
+                    <th class="sort-header" data-sort="region">Region</th>
+                    <th class="sort-header" data-sort="core-regular">Core On-Demand</th>
+                    <th class="sort-header" data-sort="core-spot">Core Spot</th>
+                    <th class="sort-header sort-active" data-sort="core-savings">Core Savings</th>
+                    <th class="sort-header" data-sort="ram-regular">RAM On-Demand</th>
+                    <th class="sort-header" data-sort="ram-spot">RAM Spot</th>
+                    <th class="sort-header" data-sort="ram-savings">RAM Savings</th>
                 </tr>
             </thead>
             <tbody id="priceTable">
@@ -44,6 +49,9 @@
     </div>
 
     <script>
+        let currentSortColumn = 'core-savings';
+        let currentSortDirection = 'desc';
+
         function formatPrice(price) {
             return price !== null ? `$${price.toFixed(6)}` : 'N/A';
         }
@@ -59,6 +67,78 @@
         function getSavingsClass(savings) {
             return savings.includes('(-') ? 'savings-positive' : 'savings-negative';
         }
+
+        function getSortValue(item, column) {
+            switch(column) {
+                case 'type':
+                    return item.machineType;
+                case 'region':
+                    return item.region;
+                case 'core-regular':
+                    return item.pricing.regular.cpu || 0;
+                case 'core-spot':
+                    return item.pricing.spot.cpu || 0;
+                case 'core-savings':
+                    return item.coreSavings;
+                case 'ram-regular':
+                    return item.pricing.regular.ram || 0;
+                case 'ram-spot':
+                    return item.pricing.spot.ram || 0;
+                case 'ram-savings':
+                    return item.ramSavings;
+                default:
+                    return 0;
+            }
+        }
+
+        function sortData(data, column, direction) {
+            return data.sort((a, b) => {
+                const aValue = getSortValue(a, column);
+                const bValue = getSortValue(b, column);
+                
+                if (typeof aValue === 'string') {
+                    return direction === 'asc' ? 
+                        aValue.localeCompare(bValue) : 
+                        bValue.localeCompare(aValue);
+                }
+                
+                return direction === 'asc' ? aValue - bValue : bValue - aValue;
+            });
+        }
+
+        function updateSortHeaders(newColumn) {
+            const headers = document.querySelectorAll('th.sort-header');
+            headers.forEach(header => {
+                const column = header.getAttribute('data-sort');
+                header.classList.remove('sort-active', 'sort-desc');
+                if (column === newColumn) {
+                    header.classList.add('sort-active');
+                    if (currentSortDirection === 'desc') {
+                        header.classList.add('sort-desc');
+                    }
+                }
+            });
+        }
+
+        function handleHeaderClick(e) {
+            const column = e.target.getAttribute('data-sort');
+            if (column === currentSortColumn) {
+                currentSortDirection = currentSortDirection === 'asc' ? 'desc' : 'asc';
+            } else {
+                currentSortColumn = column;
+                currentSortDirection = 'asc';
+            }
+            updateSortHeaders(column);
+            
+            const monthYearSelector = document.getElementById('monthYearSelector');
+            if (monthYearSelector.value) {
+                loadPricingData(monthYearSelector.value);
+            }
+        }
+
+        document.querySelectorAll('th.sort-header').forEach(header => {
+            header.addEventListener('click', handleHeaderClick);
+        });
 
         function filterTable() {
             const input = document.getElementById('searchInput');
@@ -102,7 +182,6 @@
                         displayText: new Date(currentYear, currentMonth).toLocaleString('default', { month: 'long', year: 'numeric' })
                     });
 
-                    // Move to previous month
                     currentMonth--;
                     if (currentMonth < 0) {
                         currentMonth = 11;
@@ -113,7 +192,6 @@
                 }
             }
 
-            // Populate selector
             selector.innerHTML = '';
             availableFiles.forEach(file => {
                 const option = document.createElement('option');
@@ -124,7 +202,6 @@
 
             selector.disabled = false;
 
-            // Load the most recent file if available
             if (availableFiles.length > 0) {
                 await loadPricingData(availableFiles[0].filename);
             } else {
@@ -141,79 +218,74 @@
                 const response = await fetch(filename);
                 const data = await response.json();
                 
-                // Update timestamp
                 document.getElementById('timestamp').textContent = 
                     `Data captured on: ${data.metadata.capture_timestamp}`;
 
                 const tbody = document.getElementById('priceTable');
                 tbody.innerHTML = '';
-                let currentType = null;
 
-                // Sort machine types
-                const machineTypes = Object.keys(data.prices).sort();
-                
-                for (const machineType of machineTypes) {
-                    // Get all regions for this machine type and calculate their savings
-                    const regionsWithSavings = Object.entries(data.prices[machineType])
-                        .map(([region, pricing]) => {
-                            const coreSavings = pricing.regular.cpu && pricing.spot.cpu ? 
-                                ((pricing.regular.cpu - pricing.spot.cpu) / pricing.regular.cpu) * 100 : 0;
-                            return {
-                                region,
-                                pricing,
-                                savings: coreSavings
-                            };
-                        });
-
-                    // Sort based on selected criteria
-                    const sortType = document.getElementById('sortSelector').value;
-                    regionsWithSavings.sort((a, b) => {
-                        switch (sortType) {
-                            case 'savings-desc':
-                                return b.savings - a.savings;
-                            case 'savings-asc':
-                                return a.savings - b.savings;
-                            case 'region':
-                                return a.region.localeCompare(b.region);
-                            default:
-                                return b.savings - a.savings;
-                        }
-                    });
-                    
-                    for (const {region, pricing, savings} of regionsWithSavings) {
-                        // Add machine type header if it's a new type
-                        if (machineType !== currentType) {
-                            tbody.innerHTML += `
-                                <tr class="machine-type-header">
-                                    <td colspan="8">${machineType}</td>
-                                </tr>`;
-                            currentType = machineType;
-                        }
-
-                        // Calculate prices and savings
-                        const coreRegular = pricing.regular.cpu;
-                        const coreSpot = pricing.spot.cpu;
-                        const coreSavings = formatSavings(coreRegular, coreSpot);
+                // Group data by machine type first
+                const groupedData = {};
+                Object.entries(data.prices).sort().forEach(([machineType, regions]) => {
+                    groupedData[machineType] = Object.entries(regions).map(([region, pricing]) => {
+                        const coreSavings = pricing.regular.cpu && pricing.spot.cpu ? 
+                            ((pricing.regular.cpu - pricing.spot.cpu) / pricing.regular.cpu) * 100 : 0;
+                        const ramSavings = pricing.regular.ram && pricing.spot.ram ? 
+                            ((pricing.regular.ram - pricing.spot.ram) / pricing.regular.ram) * 100 : 0;
                         
-                        const ramRegular = pricing.regular.ram;
-                        const ramSpot = pricing.spot.ram;
-                        const ramSavings = formatSavings(ramRegular, ramSpot);
+                        return {
+                            machineType,
+                            region,
+                            pricing,
+                            coreSavings,
+                            ramSavings
+                        };
+                    });
+                });
 
+                // Sort regions within each machine type group
+                Object.entries(groupedData).forEach(([machineType, regions]) => {
+                    // Add machine type header
+                    tbody.innerHTML += `
+                        <tr class="machine-type-header">
+                            <td colspan="8">${machineType}</td>
+                        </tr>`;
+
+                    // Sort regions within this machine type
+                    const sortedRegions = regions.sort((a, b) => {
+                        const aValue = getSortValue(a, currentSortColumn);
+                        const bValue = getSortValue(b, currentSortColumn);
+                        
+                        if (typeof aValue === 'string') {
+                            return currentSortDirection === 'asc' ? 
+                                aValue.localeCompare(bValue) : 
+                                bValue.localeCompare(aValue);
+                        }
+                        
+                        return currentSortDirection === 'asc' ? 
+                            aValue - bValue : 
+                            bValue - aValue;
+                    });
+
+                    // Render sorted regions
+                    sortedRegions.forEach(item => {
+                        const coreSavings = formatSavings(item.pricing.regular.cpu, item.pricing.spot.cpu);
+                        const ramSavings = formatSavings(item.pricing.regular.ram, item.pricing.spot.ram);
                         const savingsClass = getSavingsClass(coreSavings);
 
                         tbody.innerHTML += `
                             <tr>
-                                <td>${machineType}</td>
-                                <td>${region}</td>
-                                <td>${formatPrice(coreRegular)}</td>
-                                <td>${formatPrice(coreSpot)}</td>
+                                <td>${item.machineType}</td>
+                                <td>${item.region}</td>
+                                <td>${formatPrice(item.pricing.regular.cpu)}</td>
+                                <td>${formatPrice(item.pricing.spot.cpu)}</td>
                                 <td class="${savingsClass}">${coreSavings}</td>
-                                <td>${formatPrice(ramRegular)}</td>
-                                <td>${formatPrice(ramSpot)}</td>
+                                <td>${formatPrice(item.pricing.regular.ram)}</td>
+                                <td>${formatPrice(item.pricing.spot.ram)}</td>
                                 <td class="${savingsClass}">${ramSavings}</td>
                             </tr>`;
-                    }
-                }
+                    });
+                });
             } catch (error) {
                 console.error('Error loading pricing data:', error);
                 document.getElementById('priceTable').innerHTML = `
@@ -221,21 +293,12 @@
             }
         }
 
-        // Set up event listeners
         document.getElementById('monthYearSelector').addEventListener('change', (e) => {
             if (e.target.value) {
                 loadPricingData(e.target.value);
             }
         });
 
-        document.getElementById('sortSelector').addEventListener('change', (e) => {
-            const monthYearSelector = document.getElementById('monthYearSelector');
-            if (monthYearSelector.value) {
-                loadPricingData(monthYearSelector.value);
-            }
-        });
-
-        // Initialize the page
         document.addEventListener('DOMContentLoaded', scanAvailableFiles);
     </script>
 </body>

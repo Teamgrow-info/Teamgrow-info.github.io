@@ -42,6 +42,37 @@ th {
     color: white;
     position: sticky;
     top: 0;
+    cursor: pointer;
+    user-select: none;
+    padding-right: 25px !important;
+    position: relative;
+}
+
+th:hover {
+    background-color: #1557b0;
+}
+
+th.sort-header:after {
+    content: '';
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid rgba(255, 255, 255, 0.5);
+    transform: translateY(-50%);
+}
+
+th.sort-header.sort-desc:after {
+    border-bottom: none;
+    border-top: 5px solid rgba(255, 255, 255, 0.5);
+}
+
+th.sort-header.sort-active:after {
+    border-bottom-color: white;
+    border-top-color: white;
 }
 
 tr:nth-child(even) {
@@ -105,7 +136,7 @@ tr:hover {
     text-align: center;
     font-weight: bold;
     margin: 20px auto;
-    max-width: 400px;
+    max-width: 500px;
 }
 
 .info-text {
@@ -113,4 +144,10 @@ tr:hover {
     margin: 15px 0;
     font-weight: bold;
     color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+    font-weight: bold;
+    margin: 20px auto;
+    max-width: 500px;
 }

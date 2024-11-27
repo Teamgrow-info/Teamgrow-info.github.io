@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Cloud Compute Engine Pricing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Google Cloud Compute Engine Pricing</h1>
+        <div class="contact-box">
+            Contact me
+        </div>
+        <div class="info-text">
+            GNAGNAGNA
+        </div>
+        <div class="selector-container">
+            <select id="monthYearSelector"></select>
+            <select id="sortSelector">
+                <option value="savings-desc">Highest Savings First</option>
+                <option value="savings-asc">Lowest Savings First</option>
+                <option value="region">Region (A-Z)</option>
+            </select>
+        </div>
+        <div id="timestamp" class="timestamp"></div>
+        <input type="text" id="searchInput" class="search-box" onkeyup="filterTable()" placeholder="Search for machine types, regions...">
+        <table>
+            <thead>
+                <tr class="header">
+                    <th>Type</th>
+                    <th>Region</th>
+                    <th>Core On-Demand</th>
+                    <th>Core Spot</th>
+                    <th>Core Savings</th>
+                    <th>RAM On-Demand</th>
+                    <th>RAM Spot</th>
+                    <th>RAM Savings</th>
+                </tr>
+            </thead>
+            <tbody id="priceTable">
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        function formatPrice(price) {
+            return price !== null ? `$${price.toFixed(6)}` : 'N/A';
+        }
+
+        function formatSavings(regularPrice, spotPrice) {
+            if (regularPrice !== null && spotPrice !== null && regularPrice > 0) {
+                const savings = ((regularPrice - spotPrice) / regularPrice) * 100;
+                return savings >= 0 ? `(-${savings.toFixed(1)}%)` : `(+${(-savings).toFixed(1)}%)`;
+            }
+            return '';
+        }
+
+        function getSavingsClass(savings) {
+            return savings.includes('(-') ? 'savings-positive' : 'savings-negative';
+        }
+
+        function filterTable() {
+            const input = document.getElementById('searchInput');
+            const filter = input.value.toLowerCase();
+            const rows = document.getElementById('priceTable').getElementsByTagName('tr');
+
+            for (let row of rows) {
+                const text = row.textContent.toLowerCase();
+                row.style.display = text.includes(filter) ? '' : 'none';
+            }
+        }
+
+        async function fileExists(url) {
+            try {
+                const response = await fetch(url, { method: 'HEAD' });
+                return response.ok;
+            } catch {
+                return false;
+            }
+        }
+
+        async function scanAvailableFiles() {
+            const selector = document.getElementById('monthYearSelector');
+            selector.innerHTML = '<option value="">Loading...</option>';
+            selector.disabled = true;
+
+            const now = new Date();
+            let currentYear = now.getFullYear();
+            let currentMonth = now.getMonth();
+            const availableFiles = [];
+
+            while (true) {
+                const month = (currentMonth + 1).toString().padStart(2, '0');
+                const filename = `gcp_pricing_${month}_${currentYear}.json`;
+
+                if (await fileExists(filename)) {
+                    availableFiles.push({
+                        filename,
+                        month: currentMonth,
+                        year: currentYear,
+                        displayText: new Date(currentYear, currentMonth).toLocaleString('default', { month: 'long', year: 'numeric' })
+                    });
+
+                    // Move to previous month
+                    currentMonth--;
+                    if (currentMonth < 0) {
+                        currentMonth = 11;
+                        currentYear--;
+                    }
+                } else {
+                    break;
+                }
+            }
+
+            // Populate selector
+            selector.innerHTML = '';
+            availableFiles.forEach(file => {
+                const option = document.createElement('option');
+                option.value = file.filename;
+                option.textContent = file.displayText;
+                selector.appendChild(option);
+            });
+
+            selector.disabled = false;
+
+            // Load the most recent file if available
+            if (availableFiles.length > 0) {
+                await loadPricingData(availableFiles[0].filename);
+            } else {
+                document.getElementById('priceTable').innerHTML = 
+                    '<tr><td colspan="8" class="loading">No pricing data files found.</td></tr>';
+            }
+        }
+
+        async function loadPricingData(filename) {
+            try {
+                document.getElementById('priceTable').innerHTML = 
+                    '<tr><td colspan="8" class="loading">Loading pricing data...</td></tr>';
+
+                const response = await fetch(filename);
+                const data = await response.json();
+                
+                // Update timestamp
+                document.getElementById('timestamp').textContent = 
+                    `Data captured on: ${data.metadata.capture_timestamp}`;
+
+                const tbody = document.getElementById('priceTable');
+                tbody.innerHTML = '';
+                let currentType = null;
+
+                // Sort machine types
+                const machineTypes = Object.keys(data.prices).sort();
+                
+                for (const machineType of machineTypes) {
+                    // Get all regions for this machine type and calculate their savings
+                    const regionsWithSavings = Object.entries(data.prices[machineType])
+                        .map(([region, pricing]) => {
+                            const coreSavings = pricing.regular.cpu && pricing.spot.cpu ? 
+                                ((pricing.regular.cpu - pricing.spot.cpu) / pricing.regular.cpu) * 100 : 0;
+                            return {
+                                region,
+                                pricing,
+                                savings: coreSavings
+                            };
+                        });
+
+                    // Sort based on selected criteria
+                    const sortType = document.getElementById('sortSelector').value;
+                    regionsWithSavings.sort((a, b) => {
+                        switch (sortType) {
+                            case 'savings-desc':
+                                return b.savings - a.savings;
+                            case 'savings-asc':
+                                return a.savings - b.savings;
+                            case 'region':
+                                return a.region.localeCompare(b.region);
+                            default:
+                                return b.savings - a.savings;
+                        }
+                    });
+                    
+                    for (const {region, pricing, savings} of regionsWithSavings) {
+                        // Add machine type header if it's a new type
+                        if (machineType !== currentType) {
+                            tbody.innerHTML += `
+                                <tr class="machine-type-header">
+                                    <td colspan="8">${machineType}</td>
+                                </tr>`;
+                            currentType = machineType;
+                        }
+
+                        // Calculate prices and savings
+                        const coreRegular = pricing.regular.cpu;
+                        const coreSpot = pricing.spot.cpu;
+                        const coreSavings = formatSavings(coreRegular, coreSpot);
+                        
+                        const ramRegular = pricing.regular.ram;
+                        const ramSpot = pricing.spot.ram;
+                        const ramSavings = formatSavings(ramRegular, ramSpot);
+
+                        const savingsClass = getSavingsClass(coreSavings);
+
+                        tbody.innerHTML += `
+                            <tr>
+                                <td>${machineType}</td>
+                                <td>${region}</td>
+                                <td>${formatPrice(coreRegular)}</td>
+                                <td>${formatPrice(coreSpot)}</td>
+                                <td class="${savingsClass}">${coreSavings}</td>
+                                <td>${formatPrice(ramRegular)}</td>
+                                <td>${formatPrice(ramSpot)}</td>
+                                <td class="${savingsClass}">${ramSavings}</td>
+                            </tr>`;
+                    }
+                }
+            } catch (error) {
+                console.error('Error loading pricing data:', error);
+                document.getElementById('priceTable').innerHTML = `
+                    <tr><td colspan="8" class="loading">Error loading pricing data. Please check the console for details.</td></tr>`;
+            }
+        }
+
+        // Set up event listeners
+        document.getElementById('monthYearSelector').addEventListener('change', (e) => {
+            if (e.target.value) {
+                loadPricingData(e.target.value);
+            }
+        });
+
+        document.getElementById('sortSelector').addEventListener('change', (e) => {
+            const monthYearSelector = document.getElementById('monthYearSelector');
+            if (monthYearSelector.value) {
+                loadPricingData(monthYearSelector.value);
+            }
+        });
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', scanAvailableFiles);
+    </script>
+</body>
+</html>

@@ -1,0 +1,3680 @@
+{
+  "metadata": {
+    "month": 11,
+    "year": 2024,
+    "capture_date": "2024-11-27",
+    "capture_timestamp": "2024-11-27 14:28:26 UTC"
+  },
+  "prices": {
+    "e2": {
+      "europe-west9": {
+        "regular": {
+          "cpu": 0.025302,
+          "ram": 0.003391
+        },
+        "spot": {
+          "cpu": 0.01012,
+          "ram": 0.001351
+        }
+      },
+      "me-central1": {
+        "regular": {
+          "cpu": 0.02650108,
+          "ram": 0.003552089
+        },
+        "spot": {
+          "cpu": 0.00991,
+          "ram": 0.001328
+        }
+      },
+      "us-west2": {
+        "regular": {
+          "cpu": 0.0261993,
+          "ram": 0.00351141
+        },
+        "spot": {
+          "cpu": 0.011004,
+          "ram": 0.00147525
+        }
+      },
+      "europe-west4": {
+        "regular": {
+          "cpu": 0.02401338,
+          "ram": 0.00321816
+        },
+        "spot": {
+          "cpu": 0.010038,
+          "ram": 0.0013419
+        }
+      },
+      "europe-west8": {
+        "regular": {
+          "cpu": 0.025302,
+          "ram": 0.003391
+        },
+        "spot": {
+          "cpu": 0.00949,
+          "ram": 0.00127
+        }
+      },
+      "asia-northeast2": {
+        "regular": {
+          "cpu": 0.02802642,
+          "ram": 0.00373911
+        },
+        "spot": {
+          "cpu": 0.01121,
+          "ram": 0.001496
+        }
+      },
+      "southamerica-east1": {
+        "regular": {
+          "cpu": 0.0346242,
+          "ram": 0.00464025
+        },
+        "spot": {
+          "cpu": 0.00692,
+          "ram": 0.000927
+        }
+      },
+      "southamerica-west1": {
+        "regular": {
+          "cpu": 0.031190573,
+          "ram": 0.004180647
+        },
+        "spot": {
+          "cpu": 0.00739,
+          "ram": 0.000996
+        }
+      },
+      "us-west4": {
+        "regular": {
+          "cpu": 0.02456745,
+          "ram": 0.00329199
+        },
+        "spot": {
+          "cpu": 0.00309,
+          "ram": 0.000415
+        }
+      },
+      "us-west8": {
+        "regular": {
+          "cpu": 0.02181159,
+          "ram": 0.00292353
+        },
+        "spot": {
+          "cpu": 0.006543477,
+          "ram": 0.000877059
+        }
+      },
+      "us-south1": {
+        "regular": {
+          "cpu": 0.02573768,
+          "ram": 0.003449765
+        },
+        "spot": {
+          "cpu": 0.00873,
+          "ram": 0.001173
+        }
+      },
+      "europe-southwest1": {
+        "regular": {
+          "cpu": 0.025738,
+          "ram": 0.00345
+        },
+        "spot": {
+          "cpu": 0.01081,
+          "ram": 0.001449
+        }
+      },
+      "asia-south1": {
+        "regular": {
+          "cpu": 0.0261993,
+          "ram": 0.00351072
+        },
+        "spot": {
+          "cpu": 0.01048,
+          "ram": 0.001403
+        }
+      },
+      "europe-north1": {
+        "regular": {
+          "cpu": 0.02401614,
+          "ram": 0.00321816
+        },
+        "spot": {
+          "cpu": 0.0100905,
+          "ram": 0.0013524
+        }
+      },
+      "us-east5": {
+        "regular": {
+          "cpu": 0.02181159,
+          "ram": 0.00292353
+        },
+        "spot": {
+          "cpu": 0.00531,
+          "ram": 0.000712
+        }
+      },
+      "asia-south2": {
+        "regular": {
+          "cpu": 0.0261993,
+          "ram": 0.00351072
+        },
+        "spot": {
+          "cpu": 0.011004,
+          "ram": 0.00147525
+        }
+      },
+      "asia-northeast1": {
+        "regular": {
+          "cpu": 0.02802642,
+          "ram": 0.00373911
+        },
+        "spot": {
+          "cpu": 0.01121,
+          "ram": 0.001496
+        }
+      },
+      "europe-north2": {
+        "regular": {
+          "cpu": 0.02290217,
+          "ram": 0.003069707
+        },
+        "spot": {
+          "cpu": 0.007214184,
+          "ram": 0.000966957
+        }
+      },
+      "europe-west6": {
+        "regular": {
+          "cpu": 0.03051939,
+          "ram": 0.00409032
+        },
+        "spot": {
+          "cpu": 0.01282,
+          "ram": 0.001718
+        }
+      },
+      "europe-west2": {
+        "regular": {
+          "cpu": 0.0281037,
+          "ram": 0.00376602
+        },
+        "spot": {
+          "cpu": 0.01069,
+          "ram": 0.001432
+        }
+      },
+      "europe-central2": {
+        "regular": {
+          "cpu": 0.0281037,
+          "ram": 0.00376602
+        },
+        "spot": {
+          "cpu": 0.00499,
+          "ram": 0.000666
+        }
+      },
+      "northamerica-northeast1": {
+        "regular": {
+          "cpu": 0.02401338,
+          "ram": 0.00321816
+        },
+        "spot": {
+          "cpu": 0.00919,
+          "ram": 0.001233
+        }
+      },
+      "northamerica-south1": {
+        "regular": {
+          "cpu": 0.02377463,
+          "ram": 0.003186648
+        },
+        "spot": {
+          "cpu": 0.009047,
+          "ram": 0.00121208
+        }
+      },
+      "me-central2": {
+        "regular": {
+          "cpu": 0.03489854,
+          "ram": 0.004677648
+        },
+        "spot": {
+          "cpu": 0.01396,
+          "ram": 0.001871
+        }
+      },
+      "asia-east1": {
+        "regular": {
+          "cpu": 0.02525538,
+          "ram": 0.00338514
+        },
+        "spot": {
+          "cpu": 0.010605,
+          "ram": 0.0014217
+        }
+      },
+      "asia-northeast3": {
+        "regular": {
+          "cpu": 0.02802642,
+          "ram": 0.00373911
+        },
+        "spot": {
+          "cpu": 0.01121,
+          "ram": 0.001496
+        }
+      },
+      "us-central1": {
+        "regular": {
+          "cpu": 0.02181159,
+          "ram": 0.00292353
+        },
+        "spot": {
+          "cpu": 0.00916,
+          "ram": 0.001228
+        }
+      },
+      "asia-east2": {
+        "regular": {
+          "cpu": 0.03051939,
+          "ram": 0.00409032
+        },
+        "spot": {
+          "cpu": 0.0061,
+          "ram": 0.000815
+        }
+      },
+      "asia-southeast2": {
+        "regular": {
+          "cpu": 0.029331147,
+          "ram": 0.003930474
+        },
+        "spot": {
+          "cpu": 0.0123165,
+          "ram": 0.0016506
+        }
+      },
+      "europe-west12": {
+        "regular": {
+          "cpu": 0.02813695,
+          "ram": 0.003771354
+        },
+        "spot": {
+          "cpu": 0.00794,
+          "ram": 0.001063
+        }
+      },
+      "us-east4": {
+        "regular": {
+          "cpu": 0.02456745,
+          "ram": 0.00329199
+        },
+        "spot": {
+          "cpu": 0.01028,
+          "ram": 0.001378
+        }
+      },
+      "me-west1": {
+        "regular": {
+          "cpu": 0.02399275,
+          "ram": 0.003215883
+        },
+        "spot": {
+          "cpu": 0.0092,
+          "ram": 0.001237
+        }
+      },
+      "us-west3": {
+        "regular": {
+          "cpu": 0.0261993,
+          "ram": 0.00351141
+        },
+        "spot": {
+          "cpu": 0.011004,
+          "ram": 0.0014742
+        }
+      },
+      "asia-southeast1": {
+        "regular": {
+          "cpu": 0.02690931,
+          "ram": 0.00360594
+        },
+        "spot": {
+          "cpu": 0.011298,
+          "ram": 0.0015141
+        }
+      },
+      "australia-southeast2": {
+        "regular": {
+          "cpu": 0.026308,
+          "ram": 0.003525
+        },
+        "spot": {
+          "cpu": 0.01028,
+          "ram": 0.001379
+        }
+      },
+      "europe-west1": {
+        "regular": {
+          "cpu": 0.02399337,
+          "ram": 0.00321609
+        },
+        "spot": {
+          "cpu": 0.00909,
+          "ram": 0.001217
+        }
+      },
+      "europe-west10": {
+        "regular": {
+          "cpu": 0.03358985,
+          "ram": 0.004502236
+        },
+        "spot": {
+          "cpu": 0.01138,
+          "ram": 0.001525
+        }
+      },
+      "northamerica-northeast2": {
+        "regular": {
+          "cpu": 0.02401338,
+          "ram": 0.00321816
+        },
+        "spot": {
+          "cpu": 0.0096,
+          "ram": 0.001286
+        }
+      },
+      "europe-west3": {
+        "regular": {
+          "cpu": 0.0281037,
+          "ram": 0.00376602
+        },
+        "spot": {
+          "cpu": 0.01115,
+          "ram": 0.001493
+        }
+      },
+      "africa-south1": {
+        "regular": {
+          "cpu": 0.02852956,
+          "ram": 0.003823977
+        },
+        "spot": {
+          "cpu": 0.00913,
+          "ram": 0.001225
+        }
+      },
+      "australia-southeast1": {
+        "regular": {
+          "cpu": 0.03095064,
+          "ram": 0.00414759
+        },
+        "spot": {
+          "cpu": 0.01126,
+          "ram": 0.001509
+        }
+      }
+    },
+    "n1": {
+      "europe-west6": {
+        "regular": {
+          "cpu": 0.044231,
+          "ram": 0.005928
+        },
+        "spot": {
+          "cpu": 0.00977,
+          "ram": 0.001317
+        }
+      },
+      "europe-west10": {
+        "regular": {
+          "cpu": 0.04868094,
+          "ram": 0.00652498
+        },
+        "spot": {
+          "cpu": 0.0102487,
+          "ram": 0.00137368
+        }
+      },
+      "asia-southeast1": {
+        "regular": {
+          "cpu": 0.038999,
+          "ram": 0.005226
+        },
+        "spot": {
+          "cpu": 0.00668,
+          "ram": 0.000895
+        }
+      },
+      "us-east4": {
+        "regular": {
+          "cpu": 0.035605,
+          "ram": 0.004771
+        },
+        "spot": {
+          "cpu": 0.00881,
+          "ram": 0.001027
+        }
+      },
+      "africa-south1": {
+        "regular": {
+          "cpu": 0.04134719,
+          "ram": 0.005541996
+        },
+        "spot": {
+          "cpu": 0.00870474,
+          "ram": 0.001166736
+        }
+      },
+      "europe-west1": {
+        "regular": {
+          "cpu": 0.034773,
+          "ram": 0.004661
+        },
+        "spot": {
+          "cpu": 0.00955,
+          "ram": 0.001279
+        }
+      },
+      "europe-west8": {
+        "regular": {
+          "cpu": 0.03666876,
+          "ram": 0.00491492
+        },
+        "spot": {
+          "cpu": 0.0077198,
+          "ram": 0.00103472
+        }
+      },
+      "asia-east2": {
+        "regular": {
+          "cpu": 0.044231,
+          "ram": 0.005928
+        },
+        "spot": {
+          "cpu": 0.00717,
+          "ram": 0.000967
+        }
+      },
+      "asia-south1": {
+        "regular": {
+          "cpu": 0.03797,
+          "ram": 0.005088
+        },
+        "spot": {
+          "cpu": 0.00717,
+          "ram": 0.00096
+        }
+      },
+      "europe-central2": {
+        "regular": {
+          "cpu": 0.04073,
+          "ram": 0.005458
+        },
+        "spot": {
+          "cpu": 0.0061,
+          "ram": 0.000818
+        }
+      },
+      "northamerica-northeast1": {
+        "regular": {
+          "cpu": 0.034802,
+          "ram": 0.004664
+        },
+        "spot": {
+          "cpu": 0.00788,
+          "ram": 0.001061
+        }
+      },
+      "europe-west12": {
+        "regular": {
+          "cpu": 0.04077819,
+          "ram": 0.00546573
+        },
+        "spot": {
+          "cpu": 0.00858495,
+          "ram": 0.00115068
+        }
+      },
+      "us-west8": {
+        "regular": {
+          "cpu": 0.031611,
+          "ram": 0.004237
+        },
+        "spot": {
+          "cpu": 0.006655,
+          "ram": 0.000892
+        }
+      },
+      "australia-southeast1": {
+        "regular": {
+          "cpu": 0.044856,
+          "ram": 0.006011
+        },
+        "spot": {
+          "cpu": 0.01395,
+          "ram": 0.001941
+        }
+      },
+      "asia-northeast3": {
+        "regular": {
+          "cpu": 0.040618,
+          "ram": 0.005419
+        },
+        "spot": {
+          "cpu": 0.00709,
+          "ram": 0.000947
+        }
+      },
+      "me-central1": {
+        "regular": {
+          "cpu": 0.03840737,
+          "ram": 0.005147955
+        },
+        "spot": {
+          "cpu": 0.008085825,
+          "ram": 0.00108378
+        }
+      },
+      "northamerica-south1": {
+        "regular": {
+          "cpu": null,
+          "ram": 0.00461833
+        },
+        "spot": {
+          "cpu": 0.00872,
+          "ram": 0.00111725
+        }
+      },
+      "southamerica-west1": {
+        "regular": {
+          "cpu": 0.04520373,
+          "ram": 0.00605891
+        },
+        "spot": {
+          "cpu": 0.00951665,
+          "ram": 0.00127556
+        }
+      },
+      "europe-north2": {
+        "regular": {
+          "cpu": 0.03319155,
+          "ram": 0.00444885
+        },
+        "spot": {
+          "cpu": 0.006636,
+          "ram": 0.00088935
+        }
+      },
+      "asia-southeast2": {
+        "regular": {
+          "cpu": 0.04250891,
+          "ram": 0.00569634
+        },
+        "spot": {
+          "cpu": 0.00906,
+          "ram": 0.001213
+        }
+      },
+      "europe-west9": {
+        "regular": {
+          "cpu": 0.03666876,
+          "ram": 0.00491492
+        },
+        "spot": {
+          "cpu": 0.0077198,
+          "ram": 0.00103472
+        }
+      },
+      "us-central1": {
+        "regular": {
+          "cpu": 0.031611,
+          "ram": 0.004237
+        },
+        "spot": {
+          "cpu": 0.00836,
+          "ram": 0.001072
+        }
+      },
+      "us-east5": {
+        "regular": {
+          "cpu": 0.031611,
+          "ram": 0.004237
+        },
+        "spot": {
+          "cpu": 0.006655,
+          "ram": 0.000892
+        }
+      },
+      "us-west2": {
+        "regular": {
+          "cpu": 0.03797,
+          "ram": 0.005089
+        },
+        "spot": {
+          "cpu": 0.01016,
+          "ram": 0.00137
+        }
+      },
+      "australia-southeast2": {
+        "regular": {
+          "cpu": 0.044856,
+          "ram": 0.006011
+        },
+        "spot": {
+          "cpu": 0.01684,
+          "ram": 0.002255
+        }
+      },
+      "asia-south2": {
+        "regular": {
+          "cpu": 0.03797,
+          "ram": 0.005088
+        },
+        "spot": {
+          "cpu": 0.01074,
+          "ram": 0.001437
+        }
+      },
+      "asia-northeast1": {
+        "regular": {
+          "cpu": 0.040618,
+          "ram": 0.005419
+        },
+        "spot": {
+          "cpu": 0.00917,
+          "ram": 0.001224
+        }
+      },
+      "asia-east1": {
+        "regular": {
+          "cpu": 0.036602,
+          "ram": 0.004906
+        },
+        "spot": {
+          "cpu": 0.00703,
+          "ram": 0.000941
+        }
+      },
+      "southamerica-east1": {
+        "regular": {
+          "cpu": 0.05018,
+          "ram": 0.006725
+        },
+        "spot": {
+          "cpu": 0.0052,
+          "ram": 0.000696
+        }
+      },
+      "us-west4": {
+        "regular": {
+          "cpu": 0.035605,
+          "ram": 0.004771
+        },
+        "spot": {
+          "cpu": 0.00649,
+          "ram": 0.000868
+        }
+      },
+      "europe-west3": {
+        "regular": {
+          "cpu": 0.04073,
+          "ram": 0.005458
+        },
+        "spot": {
+          "cpu": 0.00843,
+          "ram": 0.001132
+        }
+      },
+      "europe-west2": {
+        "regular": {
+          "cpu": 0.04073,
+          "ram": 0.005458
+        },
+        "spot": {
+          "cpu": 0.00848,
+          "ram": 0.001134
+        }
+      },
+      "northamerica-northeast2": {
+        "regular": {
+          "cpu": 0.034802,
+          "ram": 0.004664
+        },
+        "spot": {
+          "cpu": 0.00989,
+          "ram": 0.001325
+        }
+      },
+      "us-south1": {
+        "regular": {
+          "cpu": 0.03730098,
+          "ram": 0.00499966
+        },
+        "spot": {
+          "cpu": 0.0078529,
+          "ram": 0.00105256
+        }
+      },
+      "europe-west4": {
+        "regular": {
+          "cpu": 0.034802,
+          "ram": 0.004664
+        },
+        "spot": {
+          "cpu": 0.00777,
+          "ram": 0.001047
+        }
+      },
+      "us-west3": {
+        "regular": {
+          "cpu": 0.03797,
+          "ram": 0.005089
+        },
+        "spot": {
+          "cpu": 0.011,
+          "ram": 0.001474
+        }
+      },
+      "europe-southwest1": {
+        "regular": {
+          "cpu": 0.03730098,
+          "ram": 0.00499966
+        },
+        "spot": {
+          "cpu": 0.0078529,
+          "ram": 0.00105256
+        }
+      },
+      "me-west1": {
+        "regular": {
+          "cpu": 0.0347721,
+          "ram": 0.0046607
+        },
+        "spot": {
+          "cpu": 0.00611,
+          "ram": 0.000818
+        }
+      },
+      "me-central2": {
+        "regular": {
+          "cpu": 0.0505776,
+          "ram": 0.0067792
+        },
+        "spot": {
+          "cpu": 0.010648,
+          "ram": 0.0014272
+        }
+      },
+      "asia-northeast2": {
+        "regular": {
+          "cpu": 0.040618,
+          "ram": 0.005419
+        },
+        "spot": {
+          "cpu": 0.01107,
+          "ram": 0.001477
+        }
+      },
+      "europe-north1": {
+        "regular": {
+          "cpu": 0.034806,
+          "ram": 0.004664
+        },
+        "spot": {
+          "cpu": 0.00864,
+          "ram": 0.001158
+        }
+      }
+    },
+    "g2": {
+      "europe-southwest1": {
+        "regular": {
+          "cpu": 0.02948609,
+          "ram": 0.003454389
+        },
+        "spot": {
+          "cpu": 0.009288119,
+          "ram": 0.001088133
+        }
+      },
+      "asia-northeast3": {
+        "regular": {
+          "cpu": 0.03208986,
+          "ram": 0.003759429
+        },
+        "spot": {
+          "cpu": 0.0059,
+          "ram": 0.000691
+        }
+      },
+      "northamerica-northeast1": {
+        "regular": {
+          "cpu": 0.02751452,
+          "ram": 0.003223414
+        },
+        "spot": {
+          "cpu": 0.008667074,
+          "ram": 0.001015375
+        }
+      },
+      "australia-southeast2": {
+        "regular": {
+          "cpu": 0.03247324,
+          "ram": 0.003804342
+        },
+        "spot": {
+          "cpu": 0.01117329,
+          "ram": 0.001308987
+        }
+      },
+      "us-west8": {
+        "regular": {
+          "cpu": 0.02498821,
+          "ram": 0.002927449
+        },
+        "spot": {
+          "cpu": 0.01,
+          "ram": 0.001171
+        }
+      },
+      "us-south1": {
+        "regular": {
+          "cpu": 0.02948609,
+          "ram": 0.003454389
+        },
+        "spot": {
+          "cpu": 0.009288119,
+          "ram": 0.001088133
+        }
+      },
+      "africa-south1": {
+        "regular": {
+          "cpu": 0.03268458,
+          "ram": 0.003829103
+        },
+        "spot": {
+          "cpu": 0.01029564,
+          "ram": 0.001206167
+        }
+      },
+      "australia-southeast1": {
+        "regular": {
+          "cpu": 0.031224269,
+          "ram": 0.003658022
+        },
+        "spot": {
+          "cpu": 0.01117329,
+          "ram": 0.001308987
+        }
+      },
+      "europe-north2": {
+        "regular": {
+          "cpu": 0.02623762,
+          "ram": 0.003073821
+        },
+        "spot": {
+          "cpu": 0.009975,
+          "ram": 0.0011676
+        }
+      },
+      "asia-south1": {
+        "regular": {
+          "cpu": 0.026011561,
+          "ram": 0.003047337
+        },
+        "spot": {
+          "cpu": 0.01092,
+          "ram": 0.00128
+        }
+      },
+      "europe-west10": {
+        "regular": {
+          "cpu": 0.03848185,
+          "ram": 0.004508271
+        },
+        "spot": {
+          "cpu": 0.01212178,
+          "ram": 0.001420105
+        }
+      },
+      "me-west1": {
+        "regular": {
+          "cpu": 0.02748703,
+          "ram": 0.003220193
+        },
+        "spot": {
+          "cpu": 0.008658416,
+          "ram": 0.001014361
+        }
+      },
+      "europe-west3": {
+        "regular": {
+          "cpu": 0.029449516,
+          "ram": 0.003450105
+        },
+        "spot": {
+          "cpu": 0.01028,
+          "ram": 0.001204
+        }
+      },
+      "europe-west6": {
+        "regular": {
+          "cpu": 0.03495601,
+          "ram": 0.004095208
+        },
+        "spot": {
+          "cpu": 0.01267,
+          "ram": 0.001484
+        }
+      },
+      "us-west3": {
+        "regular": {
+          "cpu": 0.03003833,
+          "ram": 0.003519086
+        },
+        "spot": {
+          "cpu": 0.009462074,
+          "ram": 0.001108512
+        }
+      },
+      "asia-east2": {
+        "regular": {
+          "cpu": 0.03495601,
+          "ram": 0.004095208
+        },
+        "spot": {
+          "cpu": 0.01101114,
+          "ram": 0.00128999
+        }
+      },
+      "europe-north1": {
+        "regular": {
+          "cpu": 0.02751452,
+          "ram": 0.003223414
+        },
+        "spot": {
+          "cpu": 0.008667074,
+          "ram": 0.001015375
+        }
+      },
+      "asia-southeast1": {
+        "regular": {
+          "cpu": 0.03082796,
+          "ram": 0.003611593
+        },
+        "spot": {
+          "cpu": 0.01295,
+          "ram": 0.001517
+        }
+      },
+      "europe-west1": {
+        "regular": {
+          "cpu": 0.02751452,
+          "ram": 0.003223414
+        },
+        "spot": {
+          "cpu": 0.00989,
+          "ram": 0.001158
+        }
+      },
+      "southamerica-west1": {
+        "regular": {
+          "cpu": 0.03573314,
+          "ram": 0.004186251
+        },
+        "spot": {
+          "cpu": 0.01125594,
+          "ram": 0.001318669
+        }
+      },
+      "europe-west12": {
+        "regular": {
+          "cpu": 0.03223479,
+          "ram": 0.003776409
+        },
+        "spot": {
+          "cpu": 0.01015396,
+          "ram": 0.001189569
+        }
+      },
+      "asia-southeast2": {
+        "regular": {
+          "cpu": 0.03360165,
+          "ram": 0.00393654
+        },
+        "spot": {
+          "cpu": 0.01058452,
+          "ram": 0.00124001
+        }
+      },
+      "southamerica-east1": {
+        "regular": {
+          "cpu": 0.03967878,
+          "ram": 0.004648496
+        },
+        "spot": {
+          "cpu": 0.01249882,
+          "ram": 0.001464276
+        }
+      },
+      "us-west4": {
+        "regular": {
+          "cpu": 0.02814422,
+          "ram": 0.003297185
+        },
+        "spot": {
+          "cpu": 0.008865431,
+          "ram": 0.001038613
+        }
+      },
+      "me-central1": {
+        "regular": {
+          "cpu": 0.03036068,
+          "ram": 0.00355685
+        },
+        "spot": {
+          "cpu": 0.009563614,
+          "ram": 0.001120408
+        }
+      },
+      "europe-west2": {
+        "regular": {
+          "cpu": 0.028451227,
+          "ram": 0.003333152
+        },
+        "spot": {
+          "cpu": 0.01014137,
+          "ram": 0.001188093
+        }
+      },
+      "us-east5": {
+        "regular": {
+          "cpu": 0.02814422,
+          "ram": 0.003297185
+        },
+        "spot": {
+          "cpu": 0.008865431,
+          "ram": 0.001038613
+        }
+      },
+      "us-west2": {
+        "regular": {
+          "cpu": 0.03003833,
+          "ram": 0.003519086
+        },
+        "spot": {
+          "cpu": 0.009462074,
+          "ram": 0.001108512
+        }
+      },
+      "europe-west8": {
+        "regular": {
+          "cpu": 0.02898633,
+          "ram": 0.00339584
+        },
+        "spot": {
+          "cpu": 0.009130693,
+          "ram": 0.00106969
+        }
+      },
+      "europe-west4": {
+        "regular": {
+          "cpu": 0.02626386,
+          "ram": 0.003076895
+        },
+        "spot": {
+          "cpu": 0.01103,
+          "ram": 0.001292
+        }
+      },
+      "asia-northeast1": {
+        "regular": {
+          "cpu": 0.03208986,
+          "ram": 0.003759429
+        },
+        "spot": {
+          "cpu": 0.01010831,
+          "ram": 0.00118422
+        }
+      },
+      "asia-northeast2": {
+        "regular": {
+          "cpu": 0.03208986,
+          "ram": 0.003759429
+        },
+        "spot": {
+          "cpu": 0.01010831,
+          "ram": 0.00118422
+        }
+      },
+      "europe-west9": {
+        "regular": {
+          "cpu": 0.02898633,
+          "ram": 0.00339584
+        },
+        "spot": {
+          "cpu": 0.009130693,
+          "ram": 0.00106969
+        }
+      },
+      "europe-central2": {
+        "regular": {
+          "cpu": 0.03219481,
+          "ram": 0.003771725
+        },
+        "spot": {
+          "cpu": 0.01014137,
+          "ram": 0.001188093
+        }
+      },
+      "me-central2": {
+        "regular": {
+          "cpu": 0.03998114,
+          "ram": 0.004683918
+        },
+        "spot": {
+          "cpu": 0.01196,
+          "ram": 0.001402
+        }
+      },
+      "asia-south2": {
+        "regular": {
+          "cpu": 0.03001334,
+          "ram": 0.003516159
+        },
+        "spot": {
+          "cpu": 0.009454203,
+          "ram": 0.00110759
+        }
+      },
+      "us-east4": {
+        "regular": {
+          "cpu": 0.024906389,
+          "ram": 0.002917862
+        },
+        "spot": {
+          "cpu": 0.01046,
+          "ram": 0.001225
+        }
+      },
+      "asia-east1": {
+        "regular": {
+          "cpu": 0.02893385,
+          "ram": 0.003389693
+        },
+        "spot": {
+          "cpu": 0.00636,
+          "ram": 0.000746
+        }
+      },
+      "us-central1": {
+        "regular": {
+          "cpu": 0.024988212,
+          "ram": 0.002927448
+        },
+        "spot": {
+          "cpu": 0.00884,
+          "ram": 0.001034
+        }
+      },
+      "northamerica-northeast2": {
+        "regular": {
+          "cpu": 0.02751452,
+          "ram": 0.003223414
+        },
+        "spot": {
+          "cpu": 0.008667074,
+          "ram": 0.000993
+        }
+      }
+    },
+    "n2": {
+      "southamerica-east1": {
+        "regular": {
+          "cpu": 0.05018,
+          "ram": 0.006725
+        },
+        "spot": {
+          "cpu": 0.01292,
+          "ram": 0.003897
+        }
+      },
+      "europe-west8": {
+        "regular": {
+          "cpu": 0.03666876,
+          "ram": 0.00491492
+        },
+        "spot": {
+          "cpu": 0.00623,
+          "ram": 0.001681
+        }
+      },
+      "us-west4": {
+        "regular": {
+          "cpu": 0.035603,
+          "ram": 0.004771
+        },
+        "spot": {
+          "cpu": 0.01495,
+          "ram": 0.004302
+        }
+      },
+      "europe-west2": {
+        "regular": {
+          "cpu": 0.04073,
+          "ram": 0.005458
+        },
+        "spot": {
+          "cpu": 0.00555,
+          "ram": 0.001484
+        }
+      },
+      "us-central1": {
+        "regular": {
+          "cpu": 0.031611,
+          "ram": 0.004237
+        },
+        "spot": {
+          "cpu": 0.01025,
+          "ram": 0.003086
+        }
+      },
+      "us-east5": {
+        "regular": {
+          "cpu": 0.031611,
+          "ram": 0.004237
+        },
+        "spot": {
+          "cpu": 0.00868,
+          "ram": 0.002616
+        }
+      },
+      "australia-southeast1": {
+        "regular": {
+          "cpu": 0.044856,
+          "ram": 0.006011
+        },
+        "spot": {
+          "cpu": 0.0103,
+          "ram": 0.003095
+        }
+      },
+      "europe-north1": {
+        "regular": {
+          "cpu": 0.034806,
+          "ram": 0.004664
+        },
+        "spot": {
+          "cpu": 0.01067,
+          "ram": 0.003235
+        }
+      },
+      "us-west8": {
+        "regular": {
+          "cpu": 0.031611,
+          "ram": 0.004237
+        },
+        "spot": {
+          "cpu": 0.00877,
+          "ram": 0.002662
+        }
+      },
+      "europe-west1": {
+        "regular": {
+          "cpu": 0.034773,
+          "ram": 0.004661
+        },
+        "spot": {
+          "cpu": 0.00443,
+          "ram": 0.001338
+        }
+      },
+      "africa-south1": {
+        "regular": {
+          "cpu": 0.04134719,
+          "ram": 0.005541996
+        },
+        "spot": {
+          "cpu": 0.00785,
+          "ram": 0.002369
+        }
+      },
+      "australia-southeast2": {
+        "regular": {
+          "cpu": 0.038128,
+          "ram": 0.005109
+        },
+        "spot": {
+          "cpu": 0.01021,
+          "ram": 0.003082
+        }
+      },
+      "europe-north2": {
+        "regular": {
+          "cpu": 0.03319155,
+          "ram": 0.00444885
+        },
+        "spot": {
+          "cpu": 0.0089985,
+          "ram": 0.0027951
+        }
+      },
+      "me-central1": {
+        "regular": {
+          "cpu": 0.03840737,
+          "ram": 0.005147955
+        },
+        "spot": {
+          "cpu": 0.00903,
+          "ram": 0.002722
+        }
+      },
+      "me-west1": {
+        "regular": {
+          "cpu": 0.0347721,
+          "ram": 0.0046607
+        },
+        "spot": {
+          "cpu": 0.01273,
+          "ram": 0.003839
+        }
+      },
+      "us-east4": {
+        "regular": {
+          "cpu": 0.035605,
+          "ram": 0.004771
+        },
+        "spot": {
+          "cpu": 0.01308,
+          "ram": 0.003939
+        }
+      },
+      "southamerica-west1": {
+        "regular": {
+          "cpu": 0.04520373,
+          "ram": 0.00605891
+        },
+        "spot": {
+          "cpu": 0.01214,
+          "ram": 0.003662
+        }
+      },
+      "europe-southwest1": {
+        "regular": {
+          "cpu": 0.03730098,
+          "ram": 0.00499966
+        },
+        "spot": {
+          "cpu": 0.00654,
+          "ram": 0.001972
+        }
+      },
+      "asia-northeast3": {
+        "regular": {
+          "cpu": 0.040595,
+          "ram": 0.005441
+        },
+        "spot": {
+          "cpu": 0.01576,
+          "ram": 0.004746
+        }
+      },
+      "europe-west12": {
+        "regular": {
+          "cpu": 0.04077819,
+          "ram": 0.00546573
+        },
+        "spot": {
+          "cpu": 0.01314,
+          "ram": 0.003962
+        }
+      },
+      "us-south1": {
+        "regular": {
+          "cpu": 0.03730098,
+          "ram": 0.00499966
+        },
+        "spot": {
+          "cpu": 0.00943,
+          "ram": 0.002855
+        }
+      },
+      "us-west3": {
+        "regular": {
+          "cpu": 0.03797,
+          "ram": 0.005089
+        },
+        "spot": {
+          "cpu": 0.01296,
+          "ram": 0.003907
+        }
+      },
+      "us-west2": {
+        "regular": {
+          "cpu": 0.03797,
+          "ram": 0.005089
+        },
+        "spot": {
+          "cpu": 0.0106,
+          "ram": 0.003215
+        }
+      },
+      "asia-east2": {
+        "regular": {
+          "cpu": 0.044231,
+          "ram": 0.005928
+        },
+        "spot": {
+          "cpu": 0.01858,
+          "ram": 0.005093
+        }
+      },
+      "asia-southeast2": {
+        "regular": {
+          "cpu": 0.04250891,
+          "ram": 0.00569634
+        },
+        "spot": {
+          "cpu": 0.01683,
+          "ram": 0.005078
+        }
+      },
+      "asia-east1": {
+        "regular": {
+          "cpu": 0.036602,
+          "ram": 0.004906
+        },
+        "spot": {
+          "cpu": 0.00688,
+          "ram": 0.002397
+        }
+      },
+      "me-central2": {
+        "regular": {
+          "cpu": 0.0505776,
+          "ram": 0.0067792
+        },
+        "spot": {
+          "cpu": 0.00632,
+          "ram": 0.001905
+        }
+      },
+      "northamerica-northeast2": {
+        "regular": {
+          "cpu": 0.034802,
+          "ram": 0.004664
+        },
+        "spot": {
+          "cpu": 0.00371,
+          "ram": 0.001117
+        }
+      },
+      "asia-southeast1": {
+        "regular": {
+          "cpu": 0.038999,
+          "ram": 0.005226
+        },
+        "spot": {
+          "cpu": 0.01461,
+          "ram": 0.00441
+        }
+      },
+      "europe-west10": {
+        "regular": {
+          "cpu": 0.04868094,
+          "ram": 0.00652498
+        },
+        "spot": {
+          "cpu": 0.00851,
+          "ram": 0.002291
+        }
+      },
+      "europe-west4": {
+        "regular": {
+          "cpu": 0.034802,
+          "ram": 0.004664
+        },
+        "spot": {
+          "cpu": 0.01126,
+          "ram": 0.003413
+        }
+      },
+      "asia-northeast2": {
+        "regular": {
+          "cpu": 0.040595,
+          "ram": 0.005441
+        },
+        "spot": {
+          "cpu": 0.01379,
+          "ram": 0.003969
+        }
+      },
+      "asia-south1": {
+        "regular": {
+          "cpu": 0.03797,
+          "ram": 0.005088
+        },
+        "spot": {
+          "cpu": 0.00814,
+          "ram": 0.002878
+        }
+      },
+      "europe-west3": {
+        "regular": {
+          "cpu": 0.04073,
+          "ram": 0.005458
+        },
+        "spot": {
+          "cpu": 0.01711,
+          "ram": 0.004684
+        }
+      },
+      "asia-northeast1": {
+        "regular": {
+          "cpu": 0.040618,
+          "ram": 0.005419
+        },
+        "spot": {
+          "cpu": 0.010149,
+          "ram": 0.003046
+        }
+      },
+      "northamerica-northeast1": {
+        "regular": {
+          "cpu": 0.034802,
+          "ram": 0.004664
+        },
+        "spot": {
+          "cpu": 0.01017,
+          "ram": 0.003081
+        }
+      },
+      "europe-central2": {
+        "regular": {
+          "cpu": 0.04073,
+          "ram": 0.005458
+        },
+        "spot": {
+          "cpu": 0.01163,
+          "ram": 0.003502
+        }
+      },
+      "europe-west6": {
+        "regular": {
+          "cpu": 0.044221,
+          "ram": 0.005927
+        },
+        "spot": {
+          "cpu": 0.01157,
+          "ram": 0.003486
+        }
+      },
+      "asia-south2": {
+        "regular": {
+          "cpu": 0.03797,
+          "ram": 0.005088
+        },
+        "spot": {
+          "cpu": 0.005,
+          "ram": 0.001739
+        }
+      },
+      "europe-west9": {
+        "regular": {
+          "cpu": 0.03666876,
+          "ram": 0.00491492
+        },
+        "spot": {
+          "cpu": 0.01319,
+          "ram": 0.003975
+        }
+      }
+    },
+    "m3": {
+      "southamerica-west1": {
+        "regular": {
+          "cpu": 0.049764,
+          "ram": 0.007293
+        },
+        "spot": {
+          "cpu": 0.0104819,
+          "ram": 0.0015444
+        }
+      },
+      "us-west8": {
+        "regular": {
+          "cpu": 0.0348,
+          "ram": 0.0051
+        },
+        "spot": {
+          "cpu": 0.01392,
+          "ram": 0.00204
+        }
+      },
+      "europe-west10": {
+        "regular": {
+          "cpu": 0.053592,
+          "ram": 0.007854
+        },
+        "spot": {
+          "cpu": 0.0112882,
+          "ram": 0.0016632
+        }
+      },
+      "southamerica-east1": {
+        "regular": {
+          "cpu": 0.05525892,
+          "ram": 0.00809829
+        },
+        "spot": {
+          "cpu": 0.00989,
+          "ram": 0.001458
+        }
+      },
+      "asia-east1": {
+        "regular": {
+          "cpu": 0.04029492,
+          "ram": 0.00590529
+        },
+        "spot": {
+          "cpu": 0.00721,
+          "ram": 0.001063
+        }
+      },
+      "africa-south1": {
+        "regular": {
+          "cpu": 0.0455184,
+          "ram": 0.0066708
+        },
+        "spot": {
+          "cpu": 0.00958764,
+          "ram": 0.00141264
+        }
+      },
+      "asia-northeast1": {
+        "regular": {
+          "cpu": 0.04469016,
+          "ram": 0.00654942
+        },
+        "spot": {
+          "cpu": 0.008,
+          "ram": 0.001386936
+        }
+      },
+      "asia-northeast3": {
+        "regular": {
+          "cpu": 0.04469016,
+          "ram": 0.00654942
+        },
+        "spot": {
+          "cpu": 0.009413186,
+          "ram": 0.001386936
+        }
+      },
+      "europe-west12": {
+        "regular": {
+          "cpu": 0.044892,
+          "ram": 0.006579
+        },
+        "spot": {
+          "cpu": 0.0094557,
+          "ram": 0.0013932
+        }
+      },
+      "asia-southeast1": {
+        "regular": {
+          "cpu": 0.04293276,
+          "ram": 0.00629187
+        },
+        "spot": {
+          "cpu": 0.00589,
+          "ram": 0.000867
+        }
+      },
+      "europe-west9": {
+        "regular": {
+          "cpu": 0.040368,
+          "ram": 0.005916
+        },
+        "spot": {
+          "cpu": 0.0085028,
+          "ram": 0.0012528
+        }
+      },
+      "me-central2": {
+        "regular": {
+          "cpu": 0.05568,
+          "ram": 0.00816
+        },
+        "spot": {
+          "cpu": 0.011728,
+          "ram": 0.001728
+        }
+      },
+      "europe-north1": {
+        "regular": {
+          "cpu": 0.03831828,
+          "ram": 0.00561561
+        },
+        "spot": {
+          "cpu": 0.00686,
+          "ram": 0.001011
+        }
+      },
+      "europe-southwest1": {
+        "regular": {
+          "cpu": 0.041064,
+          "ram": 0.006018
+        },
+        "spot": {
+          "cpu": 0.00735,
+          "ram": 0.001083
+        }
+      },
+      "us-west4": {
+        "regular": {
+          "cpu": 0.03919524,
+          "ram": 0.00574413
+        },
+        "spot": {
+          "cpu": 0.00869,
+          "ram": 0.001282
+        }
+      },
+      "asia-east2": {
+        "regular": {
+          "cpu": 0.04868172,
+          "ram": 0.00713439
+        },
+        "spot": {
+          "cpu": 0.01025394,
+          "ram": 0.001510812
+        }
+      },
+      "europe-west2": {
+        "regular": {
+          "cpu": 0.039622794,
+          "ram": 0.005806788
+        },
+        "spot": {
+          "cpu": 0.009443972,
+          "ram": 0.001183
+        }
+      },
+      "australia-southeast1": {
+        "regular": {
+          "cpu": 0.043484683,
+          "ram": 0.006372755
+        },
+        "spot": {
+          "cpu": 0.01040493,
+          "ram": 0.001303
+        }
+      },
+      "europe-west4": {
+        "regular": {
+          "cpu": 0.03657654,
+          "ram": 0.005360355
+        },
+        "spot": {
+          "cpu": 0.00545,
+          "ram": 0.000803
+        }
+      },
+      "us-west3": {
+        "regular": {
+          "cpu": 0.04183308,
+          "ram": 0.00613071
+        },
+        "spot": {
+          "cpu": 0.008811393,
+          "ram": 0.001298268
+        }
+      },
+      "europe-west8": {
+        "regular": {
+          "cpu": 0.040368,
+          "ram": 0.005916
+        },
+        "spot": {
+          "cpu": 0.00723,
+          "ram": 0.001065
+        }
+      },
+      "europe-west6": {
+        "regular": {
+          "cpu": 0.04868172,
+          "ram": 0.00713439
+        },
+        "spot": {
+          "cpu": 0.01025394,
+          "ram": 0.001510812
+        }
+      },
+      "us-central1": {
+        "regular": {
+          "cpu": 0.0348,
+          "ram": 0.0051
+        },
+        "spot": {
+          "cpu": 0.01256,
+          "ram": 0.001843
+        }
+      },
+      "asia-south2": {
+        "regular": {
+          "cpu": 0.04179828,
+          "ram": 0.00612561
+        },
+        "spot": {
+          "cpu": 0.00748,
+          "ram": 0.001103
+        }
+      },
+      "europe-west3": {
+        "regular": {
+          "cpu": 0.041013067,
+          "ram": 0.006010535
+        },
+        "spot": {
+          "cpu": 0.009443972,
+          "ram": 0.001391472
+        }
+      },
+      "northamerica-northeast1": {
+        "regular": {
+          "cpu": 0.03831828,
+          "ram": 0.00561561
+        },
+        "spot": {
+          "cpu": 0.00686,
+          "ram": 0.001189188
+        }
+      },
+      "europe-north2": {
+        "regular": {
+          "cpu": 0.03654,
+          "ram": 0.005355
+        },
+        "spot": {
+          "cpu": 0.012852,
+          "ram": 0.00188475
+        }
+      },
+      "australia-southeast2": {
+        "regular": {
+          "cpu": 0.04522407,
+          "ram": 0.006627665
+        },
+        "spot": {
+          "cpu": 0.01040493,
+          "ram": 0.00153306
+        }
+      },
+      "europe-west1": {
+        "regular": {
+          "cpu": 0.03831828,
+          "ram": 0.00561561
+        },
+        "spot": {
+          "cpu": 0.00619,
+          "ram": 0.00113
+        }
+      },
+      "me-central1": {
+        "regular": {
+          "cpu": 0.042282,
+          "ram": 0.0061965
+        },
+        "spot": {
+          "cpu": 0.00757,
+          "ram": 0.001115
+        }
+      },
+      "us-east5": {
+        "regular": {
+          "cpu": 0.03919524,
+          "ram": 0.00574413
+        },
+        "spot": {
+          "cpu": 0.008255779,
+          "ram": 0.001216404
+        }
+      },
+      "us-west2": {
+        "regular": {
+          "cpu": 0.04183308,
+          "ram": 0.00613071
+        },
+        "spot": {
+          "cpu": 0.008811393,
+          "ram": 0.001298268
+        }
+      },
+      "northamerica-northeast2": {
+        "regular": {
+          "cpu": 0.03831828,
+          "ram": 0.00561561
+        },
+        "spot": {
+          "cpu": 0.00686,
+          "ram": 0.001189188
+        }
+      },
+      "me-west1": {
+        "regular": {
+          "cpu": 0.03828,
+          "ram": 0.00561
+        },
+        "spot": {
+          "cpu": 0.008063,
+          "ram": 0.001188
+        }
+      },
+      "asia-south1": {
+        "regular": {
+          "cpu": 0.036225176,
+          "ram": 0.005308862
+        },
+        "spot": {
+          "cpu": 0.00768,
+          "ram": 0.001133
+        }
+      },
+      "asia-southeast2": {
+        "regular": {
+          "cpu": 0.04679556,
+          "ram": 0.00685797
+        },
+        "spot": {
+          "cpu": 0.009856651,
+          "ram": 0.001452276
+        }
+      },
+      "us-south1": {
+        "regular": {
+          "cpu": 0.041064,
+          "ram": 0.006018
+        },
+        "spot": {
+          "cpu": 0.0086494,
+          "ram": 0.0012744
+        }
+      },
+      "us-east4": {
+        "regular": {
+          "cpu": 0.034686053,
+          "ram": 0.0050833
+        },
+        "spot": {
+          "cpu": 0.00807,
+          "ram": 0.001189
+        }
+      },
+      "asia-northeast2": {
+        "regular": {
+          "cpu": 0.04469016,
+          "ram": 0.00654942
+        },
+        "spot": {
+          "cpu": 0.009413186,
+          "ram": 0.001386936
+        }
+      },
+      "europe-central2": {
+        "regular": {
+          "cpu": 0.04483632,
+          "ram": 0.00657084
+        },
+        "spot": {
+          "cpu": 0.009443972,
+          "ram": 0.001391472
+        }
+      }
+    },
+    "n2d": {
+      "us-west3": {
+        "regular": {
+          "cpu": 0.033034,
+          "ram": 0.004427
+        },
+        "spot": {
+          "cpu": 0.00764,
+          "ram": 0.002113
+        }
+      },
+      "australia-southeast2": {
+        "regular": {
+          "cpu": 0.033171,
+          "ram": 0.004446
+        },
+        "spot": {
+          "cpu": 0.00943,
+          "ram": 0.002843
+        }
+      },
+      "asia-northeast3": {
+        "regular": {
+          "cpu": 0.035318,
+          "ram": 0.004734
+        },
+        "spot": {
+          "cpu": 0.00577,
+          "ram": 0.001552
+        }
+      },
+      "me-west1": {
+        "regular": {
+          "cpu": 0.0302522,
+          "ram": 0.0040546
+        },
+        "spot": {
+          "cpu": 0.0054,
+          "ram": 0.001632
+        }
+      },
+      "us-west2": {
+        "regular": {
+          "cpu": 0.033034,
+          "ram": 0.004427
+        },
+        "spot": {
+          "cpu": 0.00972,
+          "ram": 0.003088
+        }
+      },
+      "us-central1": {
+        "regular": {
+          "cpu": 0.027502,
+          "ram": 0.003686
+        },
+        "spot": {
+          "cpu": 0.00573,
+          "ram": 0.000766
+        }
+      },
+      "southamerica-west1": {
+        "regular": {
+          "cpu": 0.03932786,
+          "ram": 0.00527098
+        },
+        "spot": {
+          "cpu": 0.00552,
+          "ram": 0.001665
+        }
+      },
+      "us-east5": {
+        "regular": {
+          "cpu": 0.027502,
+          "ram": 0.003686
+        },
+        "spot": {
+          "cpu": 0.00352,
+          "ram": 0.001064
+        }
+      },
+      "europe-west4": {
+        "regular": {
+          "cpu": 0.030278,
+          "ram": 0.004058
+        },
+        "spot": {
+          "cpu": 0.00478,
+          "ram": 0.001784
+        }
+      },
+      "us-west4": {
+        "regular": {
+          "cpu": 0.030976,
+          "ram": 0.004151
+        },
+        "spot": {
+          "cpu": 0.00901,
+          "ram": 0.002716
+        }
+      },
+      "europe-west9": {
+        "regular": {
+          "cpu": 0.03190232,
+          "ram": 0.00427576
+        },
+        "spot": {
+          "cpu": 0.00787,
+          "ram": 0.002369
+        }
+      },
+      "europe-central2": {
+        "regular": {
+          "cpu": 0.035435,
+          "ram": 0.004748
+        },
+        "spot": {
+          "cpu": 0.012,
+          "ram": 0.003609
+        }
+      },
+      "europe-north1": {
+        "regular": {
+          "cpu": 0.030281,
+          "ram": 0.004058
+        },
+        "spot": {
+          "cpu": 0.00602,
+          "ram": 0.001897
+        }
+      },
+      "europe-west8": {
+        "regular": {
+          "cpu": 0.03190232,
+          "ram": 0.00427576
+        },
+        "spot": {
+          "cpu": 0.00403,
+          "ram": 0.001214
+        }
+      },
+      "europe-west6": {
+        "regular": {
+          "cpu": 0.038473,
+          "ram": 0.005156
+        },
+        "spot": {
+          "cpu": 0.00929,
+          "ram": 0.002801
+        }
+      },
+      "northamerica-northeast2": {
+        "regular": {
+          "cpu": 0.030278,
+          "ram": 0.004058
+        },
+        "spot": {
+          "cpu": 0.00657,
+          "ram": 0.001982
+        }
+      },
+      "europe-west1": {
+        "regular": {
+          "cpu": 0.030253,
+          "ram": 0.004055
+        },
+        "spot": {
+          "cpu": 0.01065,
+          "ram": 0.003061
+        }
+      },
+      "europe-southwest1": {
+        "regular": {
+          "cpu": 0.03245236,
+          "ram": 0.00434948
+        },
+        "spot": {
+          "cpu": 0.0086,
+          "ram": 0.002601
+        }
+      },
+      "asia-south1": {
+        "regular": {
+          "cpu": 0.018151,
+          "ram": 0.002433
+        },
+        "spot": {
+          "cpu": 0.00648,
+          "ram": 0.001954
+        }
+      },
+      "me-central1": {
+        "regular": {
+          "cpu": 0.03341493,
+          "ram": 0.00447849
+        },
+        "spot": {
+          "cpu": 0.00506,
+          "ram": 0.001524
+        }
+      },
+      "europe-west2": {
+        "regular": {
+          "cpu": 0.035435,
+          "ram": 0.004748
+        },
+        "spot": {
+          "cpu": 0.00962,
+          "ram": 0.002904
+        }
+      },
+      "us-east4": {
+        "regular": {
+          "cpu": 0.030976,
+          "ram": 0.004151
+        },
+        "spot": {
+          "cpu": 0.00777,
+          "ram": 0.002868
+        }
+      },
+      "southamerica-east1": {
+        "regular": {
+          "cpu": 0.043657,
+          "ram": 0.005851
+        },
+        "spot": {
+          "cpu": 0.00873,
+          "ram": 0.002639
+        }
+      },
+      "asia-east1": {
+        "regular": {
+          "cpu": 0.031844,
+          "ram": 0.004268
+        },
+        "spot": {
+          "cpu": 0.01337,
+          "ram": 0.003848
+        }
+      },
+      "northamerica-northeast1": {
+        "regular": {
+          "cpu": 0.030278,
+          "ram": 0.004058
+        },
+        "spot": {
+          "cpu": 0.01211,
+          "ram": 0.003259
+        }
+      },
+      "asia-east2": {
+        "regular": {
+          "cpu": 0.038481,
+          "ram": 0.005157
+        },
+        "spot": {
+          "cpu": 0.00838,
+          "ram": 0.00252
+        }
+      },
+      "europe-west3": {
+        "regular": {
+          "cpu": 0.035435,
+          "ram": 0.004748
+        },
+        "spot": {
+          "cpu": 0.01488,
+          "ram": 0.004075
+        }
+      },
+      "asia-northeast2": {
+        "regular": {
+          "cpu": 0.035318,
+          "ram": 0.004734
+        },
+        "spot": {
+          "cpu": 0.00454,
+          "ram": 0.001367
+        }
+      },
+      "us-south1": {
+        "regular": {
+          "cpu": 0.03245236,
+          "ram": 0.00434948
+        },
+        "spot": {
+          "cpu": 0.00527,
+          "ram": 0.00099002
+        }
+      },
+      "asia-southeast2": {
+        "regular": {
+          "cpu": 0.03698261,
+          "ram": 0.00495623
+        },
+        "spot": {
+          "cpu": 0.00705,
+          "ram": 0.002123
+        }
+      },
+      "europe-west10": {
+        "regular": {
+          "cpu": 0.04235308,
+          "ram": 0.00567644
+        },
+        "spot": {
+          "cpu": 0.00721,
+          "ram": 0.002175
+        }
+      },
+      "europe-west12": {
+        "regular": {
+          "cpu": 0.03547758,
+          "ram": 0.00475494
+        },
+        "spot": {
+          "cpu": 0.00335,
+          "ram": 0.001013
+        }
+      },
+      "me-central2": {
+        "regular": {
+          "cpu": 0.0440032,
+          "ram": 0.0058976
+        },
+        "spot": {
+          "cpu": 0.00524,
+          "ram": 0.001583
+        }
+      },
+      "asia-northeast1": {
+        "regular": {
+          "cpu": 0.035338,
+          "ram": 0.004715
+        },
+        "spot": {
+          "cpu": 0.00977,
+          "ram": 0.00293
+        }
+      },
+      "europe-north2": {
+        "regular": {
+          "cpu": 0.0288771,
+          "ram": 0.0038703
+        },
+        "spot": {
+          "cpu": 0.0054915,
+          "ram": 0.00079275
+        }
+      },
+      "australia-southeast1": {
+        "regular": {
+          "cpu": 0.039025,
+          "ram": 0.00523
+        },
+        "spot": {
+          "cpu": 0.01165,
+          "ram": 0.0035
+        }
+      },
+      "us-west8": {
+        "regular": {
+          "cpu": 0.027502,
+          "ram": 0.003686
+        },
+        "spot": {
+          "cpu": 0.0048,
+          "ram": 0.000839
+        }
+      },
+      "africa-south1": {
+        "regular": {
+          "cpu": 0.03597262,
+          "ram": 0.004821288
+        },
+        "spot": {
+          "cpu": 0.00613,
+          "ram": 0.001853
+        }
+      },
+      "asia-south2": {
+        "regular": {
+          "cpu": 0.033034,
+          "ram": 0.004427
+        },
+        "spot": {
+          "cpu": 0.00573,
+          "ram": 0.001729
+        }
+      },
+      "asia-southeast1": {
+        "regular": {
+          "cpu": 0.033929,
+          "ram": 0.004547
+        },
+        "spot": {
+          "cpu": 0.00747,
+          "ram": 0.002245
+        }
+      }
+    },
+    "t2d": {
+      "us-east4": {
+        "regular": {
+          "cpu": 0.030976,
+          "ram": 0.004151
+        },
+        "spot": {
+          "cpu": 0.00749,
+          "ram": 0.001004
+        }
+      },
+      "australia-southeast2": {
+        "regular": {
+          "cpu": 0.039025,
+          "ram": 0.00523
+        },
+        "spot": {
+          "cpu": 0.00903,
+          "ram": 0.00121
+        }
+      },
+      "asia-east2": {
+        "regular": {
+          "cpu": 0.038481,
+          "ram": 0.005157
+        },
+        "spot": {
+          "cpu": 0.00636,
+          "ram": 0.000853
+        }
+      },
+      "southamerica-west1": {
+        "regular": {
+          "cpu": 0.03932786,
+          "ram": 0.00527098
+        },
+        "spot": {
+          "cpu": 0.00497,
+          "ram": 0.000666
+        }
+      },
+      "northamerica-northeast2": {
+        "regular": {
+          "cpu": 0.030278,
+          "ram": 0.004058
+        },
+        "spot": {
+          "cpu": 0.00556,
+          "ram": 0.000749
+        }
+      },
+      "me-central2": {
+        "regular": {
+          "cpu": 0.0440032,
+          "ram": 0.0058976
+        },
+        "spot": {
+          "cpu": 0.00593,
+          "ram": 0.000794
+        }
+      },
+      "us-south1": {
+        "regular": {
+          "cpu": 0.03245236,
+          "ram": 0.00434948
+        },
+        "spot": {
+          "cpu": 0.00489476,
+          "ram": 0.00065643
+        }
+      },
+      "northamerica-northeast1": {
+        "regular": {
+          "cpu": 0.030278,
+          "ram": 0.004058
+        },
+        "spot": {
+          "cpu": 0.00448,
+          "ram": 0.000603
+        }
+      },
+      "europe-west1": {
+        "regular": {
+          "cpu": 0.030253,
+          "ram": 0.004055
+        },
+        "spot": {
+          "cpu": 0.01089,
+          "ram": 0.00146
+        }
+      },
+      "europe-west9": {
+        "regular": {
+          "cpu": 0.03190232,
+          "ram": 0.00427576
+        },
+        "spot": {
+          "cpu": 0.00346,
+          "ram": 0.000466
+        }
+      },
+      "europe-west12": {
+        "regular": {
+          "cpu": 0.03547758,
+          "ram": 0.00475494
+        },
+        "spot": {
+          "cpu": 0.00437,
+          "ram": 0.000585
+        }
+      },
+      "asia-south1": {
+        "regular": {
+          "cpu": 0.018151,
+          "ram": 0.002433
+        },
+        "spot": {
+          "cpu": 0.00726,
+          "ram": 0.000974
+        }
+      },
+      "us-west8": {
+        "regular": {
+          "cpu": 0.027502,
+          "ram": 0.003686
+        },
+        "spot": {
+          "cpu": 0.00601,
+          "ram": 0.000806
+        }
+      },
+      "australia-southeast1": {
+        "regular": {
+          "cpu": 0.039025,
+          "ram": 0.00523
+        },
+        "spot": {
+          "cpu": 0.00965,
+          "ram": 0.00129
+        }
+      },
+      "asia-southeast1": {
+        "regular": {
+          "cpu": 0.033929,
+          "ram": 0.004547
+        },
+        "spot": {
+          "cpu": 0.0087,
+          "ram": 0.001164
+        }
+      },
+      "africa-south1": {
+        "regular": {
+          "cpu": 0.03597262,
+          "ram": 0.004821288
+        },
+        "spot": {
+          "cpu": 0.00385,
+          "ram": 0.000516
+        }
+      },
+      "me-central1": {
+        "regular": {
+          "cpu": 0.03341493,
+          "ram": 0.00447849
+        },
+        "spot": {
+          "cpu": 0.00364,
+          "ram": 0.000488
+        }
+      },
+      "southamerica-east1": {
+        "regular": {
+          "cpu": 0.043657,
+          "ram": 0.005851
+        },
+        "spot": {
+          "cpu": 0.01443,
+          "ram": 0.001936
+        }
+      },
+      "asia-northeast2": {
+        "regular": {
+          "cpu": 0.035318,
+          "ram": 0.004734
+        },
+        "spot": {
+          "cpu": 0.01413,
+          "ram": 0.001894
+        }
+      },
+      "us-west3": {
+        "regular": {
+          "cpu": 0.033034,
+          "ram": 0.004427
+        },
+        "spot": {
+          "cpu": 0.00763,
+          "ram": 0.001028
+        }
+      },
+      "us-west4": {
+        "regular": {
+          "cpu": 0.030976,
+          "ram": 0.004151
+        },
+        "spot": {
+          "cpu": 0.00785,
+          "ram": 0.001053
+        }
+      },
+      "europe-central2": {
+        "regular": {
+          "cpu": 0.035435,
+          "ram": 0.004748
+        },
+        "spot": {
+          "cpu": 0.00889,
+          "ram": 0.001189
+        }
+      },
+      "asia-south2": {
+        "regular": {
+          "cpu": 0.033034,
+          "ram": 0.004427
+        },
+        "spot": {
+          "cpu": 0.00802,
+          "ram": 0.001074
+        }
+      },
+      "asia-northeast3": {
+        "regular": {
+          "cpu": 0.035318,
+          "ram": 0.004734
+        },
+        "spot": {
+          "cpu": 0.00812,
+          "ram": 0.001089
+        }
+      },
+      "europe-west2": {
+        "regular": {
+          "cpu": 0.035435,
+          "ram": 0.004748
+        },
+        "spot": {
+          "cpu": 0.0064,
+          "ram": 0.000857
+        }
+      },
+      "us-east5": {
+        "regular": {
+          "cpu": 0.027502,
+          "ram": 0.003686
+        },
+        "spot": {
+          "cpu": 0.00248,
+          "ram": 0.000332
+        }
+      },
+      "europe-west3": {
+        "regular": {
+          "cpu": 0.035435,
+          "ram": 0.004748
+        },
+        "spot": {
+          "cpu": 0.01228,
+          "ram": 0.001642
+        }
+      },
+      "us-central1": {
+        "regular": {
+          "cpu": 0.027502,
+          "ram": 0.003686
+        },
+        "spot": {
+          "cpu": 0.0045,
+          "ram": 0.000603
+        }
+      },
+      "us-west2": {
+        "regular": {
+          "cpu": 0.033034,
+          "ram": 0.004427
+        },
+        "spot": {
+          "cpu": 0.00679,
+          "ram": 0.000915
+        }
+      },
+      "asia-east1": {
+        "regular": {
+          "cpu": 0.031844,
+          "ram": 0.004268
+        },
+        "spot": {
+          "cpu": 0.00682,
+          "ram": 0.000915
+        }
+      },
+      "asia-southeast2": {
+        "regular": {
+          "cpu": 0.03698261,
+          "ram": 0.00495623
+        },
+        "spot": {
+          "cpu": 0.00728,
+          "ram": 0.000976
+        }
+      },
+      "europe-north2": {
+        "regular": {
+          "cpu": 0.0288771,
+          "ram": 0.0038703
+        },
+        "spot": {
+          "cpu": 0.0041055,
+          "ram": 0.0005502
+        }
+      },
+      "europe-west6": {
+        "regular": {
+          "cpu": 0.038473,
+          "ram": 0.005156
+        },
+        "spot": {
+          "cpu": 0.00756,
+          "ram": 0.001014
+        }
+      },
+      "europe-west4": {
+        "regular": {
+          "cpu": 0.030278,
+          "ram": 0.004058
+        },
+        "spot": {
+          "cpu": 0.00682,
+          "ram": 0.000914
+        }
+      },
+      "europe-southwest1": {
+        "regular": {
+          "cpu": 0.03245236,
+          "ram": 0.00434948
+        },
+        "spot": {
+          "cpu": 0.00332,
+          "ram": 0.000444
+        }
+      },
+      "europe-west10": {
+        "regular": {
+          "cpu": 0.04235308,
+          "ram": 0.00567644
+        },
+        "spot": {
+          "cpu": 0.00546,
+          "ram": 0.00073
+        }
+      },
+      "europe-north1": {
+        "regular": {
+          "cpu": 0.030281,
+          "ram": 0.004058
+        },
+        "spot": {
+          "cpu": 0.00468,
+          "ram": 0.000625
+        }
+      },
+      "me-west1": {
+        "regular": {
+          "cpu": 0.0302522,
+          "ram": 0.0040546
+        },
+        "spot": {
+          "cpu": 0.00491,
+          "ram": 0.000658
+        }
+      },
+      "asia-northeast1": {
+        "regular": {
+          "cpu": 0.035338,
+          "ram": 0.004715
+        },
+        "spot": {
+          "cpu": 0.00652,
+          "ram": 0.000868
+        }
+      },
+      "europe-west8": {
+        "regular": {
+          "cpu": 0.03190232,
+          "ram": 0.00427576
+        },
+        "spot": {
+          "cpu": 0.00349,
+          "ram": 0.000468
+        }
+      }
+    },
+    "a2": {
+      "europe-north2": {
+        "regular": {
+          "cpu": 0.03319155,
+          "ram": 0.00444885
+        },
+        "spot": {
+          "cpu": 0.013272,
+          "ram": 0.00177975
+        }
+      },
+      "asia-southeast1": {
+        "regular": {
+          "cpu": 0.038999,
+          "ram": 0.005226
+        },
+        "spot": {
+          "cpu": 0.01372,
+          "ram": 0.00184
+        }
+      },
+      "us-east5": {
+        "regular": {
+          "cpu": 0.031611,
+          "ram": 0.004237
+        },
+        "spot": {
+          "cpu": 0.00894,
+          "ram": 0.001198
+        }
+      },
+      "europe-west8": {
+        "regular": {
+          "cpu": 0.03666876,
+          "ram": 0.00491492
+        },
+        "spot": {
+          "cpu": 0.01100063,
+          "ram": 0.001474476
+        }
+      },
+      "australia-southeast1": {
+        "regular": {
+          "cpu": 0.044856,
+          "ram": 0.006011
+        },
+        "spot": {
+          "cpu": 0.0094833,
+          "ram": 0.0012711
+        }
+      },
+      "europe-central2": {
+        "regular": {
+          "cpu": 0.04073,
+          "ram": 0.005458
+        },
+        "spot": {
+          "cpu": 0.0094833,
+          "ram": 0.0012711
+        }
+      },
+      "africa-south1": {
+        "regular": {
+          "cpu": 0.04134719,
+          "ram": 0.005541996
+        },
+        "spot": {
+          "cpu": 0.01240416,
+          "ram": 0.001662599
+        }
+      },
+      "asia-south2": {
+        "regular": {
+          "cpu": 0.03797,
+          "ram": 0.005088
+        },
+        "spot": {
+          "cpu": 0.01137996,
+          "ram": 0.00152532
+        }
+      },
+      "northamerica-northeast2": {
+        "regular": {
+          "cpu": 0.034802,
+          "ram": 0.004664
+        },
+        "spot": {
+          "cpu": 0.01043163,
+          "ram": 0.00139821
+        }
+      },
+      "us-west3": {
+        "regular": {
+          "cpu": 0.03797,
+          "ram": 0.005089
+        },
+        "spot": {
+          "cpu": 0.01519,
+          "ram": 0.002035
+        }
+      },
+      "us-south1": {
+        "regular": {
+          "cpu": 0.03730098,
+          "ram": 0.00499966
+        },
+        "spot": {
+          "cpu": 0.01119029,
+          "ram": 0.001499898
+        }
+      },
+      "me-central1": {
+        "regular": {
+          "cpu": 0.03840737,
+          "ram": 0.005147955
+        },
+        "spot": {
+          "cpu": 0.01152221,
+          "ram": 0.001544387
+        }
+      },
+      "asia-northeast2": {
+        "regular": {
+          "cpu": 0.040618,
+          "ram": 0.005419
+        },
+        "spot": {
+          "cpu": 0.0094833,
+          "ram": 0.0012711
+        }
+      },
+      "europe-west10": {
+        "regular": {
+          "cpu": 0.04868094,
+          "ram": 0.00652498
+        },
+        "spot": {
+          "cpu": 0.01460428,
+          "ram": 0.001957494
+        }
+      },
+      "europe-west3": {
+        "regular": {
+          "cpu": 0.04073,
+          "ram": 0.005458
+        },
+        "spot": {
+          "cpu": 0.0094833,
+          "ram": 0.0012711
+        }
+      },
+      "europe-west2": {
+        "regular": {
+          "cpu": 0.04073,
+          "ram": 0.005458
+        },
+        "spot": {
+          "cpu": 0.0094833,
+          "ram": 0.0012711
+        }
+      },
+      "us-west8": {
+        "regular": {
+          "cpu": 0.031611,
+          "ram": 0.004237
+        },
+        "spot": {
+          "cpu": 0.01252,
+          "ram": 0.001678
+        }
+      },
+      "southamerica-west1": {
+        "regular": {
+          "cpu": 0.04520373,
+          "ram": 0.00605891
+        },
+        "spot": {
+          "cpu": 0.013561119,
+          "ram": 0.001817673
+        }
+      },
+      "asia-northeast3": {
+        "regular": {
+          "cpu": 0.040618,
+          "ram": 0.005419
+        },
+        "spot": {
+          "cpu": 0.015,
+          "ram": 0.002002
+        }
+      },
+      "australia-southeast2": {
+        "regular": {
+          "cpu": 0.044856,
+          "ram": 0.006011
+        },
+        "spot": {
+          "cpu": 0.013466286,
+          "ram": 0.001804962
+        }
+      },
+      "asia-northeast1": {
+        "regular": {
+          "cpu": 0.040618,
+          "ram": 0.005419
+        },
+        "spot": {
+          "cpu": 0.01625,
+          "ram": 0.002168
+        }
+      },
+      "europe-west1": {
+        "regular": {
+          "cpu": 0.034773,
+          "ram": 0.004661
+        },
+        "spot": {
+          "cpu": 0.0094833,
+          "ram": 0.0012711
+        }
+      },
+      "asia-southeast2": {
+        "regular": {
+          "cpu": 0.0425089,
+          "ram": 0.0056963
+        },
+        "spot": {
+          "cpu": 0.0094833,
+          "ram": 0.0012711
+        }
+      },
+      "northamerica-northeast1": {
+        "regular": {
+          "cpu": 0.034802,
+          "ram": 0.004664
+        },
+        "spot": {
+          "cpu": 0.0094833,
+          "ram": 0.0012711
+        }
+      },
+      "us-central1": {
+        "regular": {
+          "cpu": 0.031611,
+          "ram": 0.004237
+        },
+        "spot": {
+          "cpu": 0.01264,
+          "ram": 0.001695
+        }
+      },
+      "europe-west9": {
+        "regular": {
+          "cpu": 0.03666876,
+          "ram": 0.00491492
+        },
+        "spot": {
+          "cpu": 0.01100063,
+          "ram": 0.001474476
+        }
+      },
+      "europe-west6": {
+        "regular": {
+          "cpu": 0.044231,
+          "ram": 0.005928
+        },
+        "spot": {
+          "cpu": 0.0094833,
+          "ram": 0.0012711
+        }
+      },
+      "southamerica-east1": {
+        "regular": {
+          "cpu": 0.05018,
+          "ram": 0.006725
+        },
+        "spot": {
+          "cpu": 0.0094833,
+          "ram": 0.0012711
+        }
+      },
+      "me-central2": {
+        "regular": {
+          "cpu": 0.0505776,
+          "ram": 0.0067792
+        },
+        "spot": {
+          "cpu": 0.01517328,
+          "ram": 0.00203376
+        }
+      },
+      "us-west2": {
+        "regular": {
+          "cpu": 0.03797,
+          "ram": 0.005089
+        },
+        "spot": {
+          "cpu": 0.0094833,
+          "ram": 0.0012711
+        }
+      },
+      "us-east4": {
+        "regular": {
+          "cpu": 0.035605,
+          "ram": 0.004771
+        },
+        "spot": {
+          "cpu": 0.01424,
+          "ram": 0.001908
+        }
+      },
+      "europe-southwest1": {
+        "regular": {
+          "cpu": 0.03730098,
+          "ram": 0.00499966
+        },
+        "spot": {
+          "cpu": 0.01119029,
+          "ram": 0.001499898
+        }
+      },
+      "asia-south1": {
+        "regular": {
+          "cpu": 0.03797,
+          "ram": 0.005088
+        },
+        "spot": {
+          "cpu": 0.0094833,
+          "ram": 0.0012711
+        }
+      },
+      "asia-east2": {
+        "regular": {
+          "cpu": 0.044231,
+          "ram": 0.005928
+        },
+        "spot": {
+          "cpu": 0.0094833,
+          "ram": 0.0012711
+        }
+      },
+      "me-west1": {
+        "regular": {
+          "cpu": 0.0347721,
+          "ram": 0.0046607
+        },
+        "spot": {
+          "cpu": 0.01391,
+          "ram": 0.001864
+        }
+      },
+      "asia-east1": {
+        "regular": {
+          "cpu": 0.036602,
+          "ram": 0.004906
+        },
+        "spot": {
+          "cpu": 0.0094833,
+          "ram": 0.0012711
+        }
+      },
+      "us-west4": {
+        "regular": {
+          "cpu": 0.035605,
+          "ram": 0.004771
+        },
+        "spot": {
+          "cpu": 0.01424,
+          "ram": 0.001908
+        }
+      },
+      "europe-north1": {
+        "regular": {
+          "cpu": 0.034806,
+          "ram": 0.004664
+        },
+        "spot": {
+          "cpu": 0.0094833,
+          "ram": 0.0012711
+        }
+      },
+      "europe-west4": {
+        "regular": {
+          "cpu": 0.034802,
+          "ram": 0.004664
+        },
+        "spot": {
+          "cpu": 0.01392,
+          "ram": 0.001866
+        }
+      },
+      "europe-west12": {
+        "regular": {
+          "cpu": 0.04077819,
+          "ram": 0.00546573
+        },
+        "spot": {
+          "cpu": 0.01223346,
+          "ram": 0.001639719
+        }
+      }
+    },
+    "c2d": {
+      "us-west2": {
+        "regular": {
+          "cpu": 0.035537,
+          "ram": 0.004759
+        },
+        "spot": {
+          "cpu": 0.0086,
+          "ram": 0.001152
+        }
+      },
+      "us-west4": {
+        "regular": {
+          "cpu": 0.033296,
+          "ram": 0.004458
+        },
+        "spot": {
+          "cpu": 0.00846,
+          "ram": 0.001133
+        }
+      },
+      "asia-southeast1": {
+        "regular": {
+          "cpu": 0.036471,
+          "ram": 0.004884
+        },
+        "spot": {
+          "cpu": 0.00668,
+          "ram": 0.000898
+        }
+      },
+      "southamerica-east1": {
+        "regular": {
+          "cpu": 0.046942,
+          "ram": 0.006286
+        },
+        "spot": {
+          "cpu": 0.00966,
+          "ram": 0.001293
+        }
+      },
+      "europe-west6": {
+        "regular": {
+          "cpu": 0.041355,
+          "ram": 0.005538
+        },
+        "spot": {
+          "cpu": 0.010008,
+          "ram": 0.00134
+        }
+      },
+      "southamerica-west1": {
+        "regular": {
+          "cpu": 0.04227509,
+          "ram": 0.00566137
+        },
+        "spot": {
+          "cpu": 0.01023022,
+          "ram": 0.00136994
+        }
+      },
+      "me-central1": {
+        "regular": {
+          "cpu": 0.03591905,
+          "ram": 0.004810185
+        },
+        "spot": {
+          "cpu": 0.007614405,
+          "ram": 0.001019385
+        }
+      },
+      "asia-east1": {
+        "regular": {
+          "cpu": 0.034231,
+          "ram": 0.004584
+        },
+        "spot": {
+          "cpu": 0.01211,
+          "ram": 0.00162
+        }
+      },
+      "australia-southeast2": {
+        "regular": {
+          "cpu": 0.041964,
+          "ram": 0.005619
+        },
+        "spot": {
+          "cpu": 0.010155,
+          "ram": 0.00136
+        }
+      },
+      "europe-north1": {
+        "regular": {
+          "cpu": 0.032551,
+          "ram": 0.004359
+        },
+        "spot": {
+          "cpu": 0.007877,
+          "ram": 0.001055
+        }
+      },
+      "europe-west12": {
+        "regular": {
+          "cpu": 0.03813627,
+          "ram": 0.00510711
+        },
+        "spot": {
+          "cpu": 0.00808443,
+          "ram": 0.00108231
+        }
+      },
+      "us-west3": {
+        "regular": {
+          "cpu": 0.035537,
+          "ram": 0.004759
+        },
+        "spot": {
+          "cpu": 0.0086,
+          "ram": 0.001152
+        }
+      },
+      "me-central2": {
+        "regular": {
+          "cpu": 0.0473008,
+          "ram": 0.0063344
+        },
+        "spot": {
+          "cpu": 0.0100272,
+          "ram": 0.0013424
+        }
+      },
+      "us-east4": {
+        "regular": {
+          "cpu": 0.033296,
+          "ram": 0.004458
+        },
+        "spot": {
+          "cpu": 0.01186,
+          "ram": 0.001589
+        }
+      },
+      "asia-northeast2": {
+        "regular": {
+          "cpu": 0.037964,
+          "ram": 0.005084
+        },
+        "spot": {
+          "cpu": 0.009187,
+          "ram": 0.00123
+        }
+      },
+      "europe-west3": {
+        "regular": {
+          "cpu": 0.038088,
+          "ram": 0.0051
+        },
+        "spot": {
+          "cpu": 0.00924,
+          "ram": 0.001238
+        }
+      },
+      "me-west1": {
+        "regular": {
+          "cpu": 0.0325193,
+          "ram": 0.0043549
+        },
+        "spot": {
+          "cpu": 0.0078694,
+          "ram": 0.0010538
+        }
+      },
+      "europe-west10": {
+        "regular": {
+          "cpu": 0.04552702,
+          "ram": 0.00609686
+        },
+        "spot": {
+          "cpu": 0.00965118,
+          "ram": 0.00129206
+        }
+      },
+      "asia-southeast2": {
+        "regular": {
+          "cpu": 0.039753,
+          "ram": 0.005323
+        },
+        "spot": {
+          "cpu": 0.00962,
+          "ram": 0.001288
+        }
+      },
+      "australia-southeast1": {
+        "regular": {
+          "cpu": 0.041964,
+          "ram": 0.005619
+        },
+        "spot": {
+          "cpu": 0.010155,
+          "ram": 0.00136
+        }
+      },
+      "europe-north2": {
+        "regular": {
+          "cpu": 0.03104115,
+          "ram": 0.00415695
+        },
+        "spot": {
+          "cpu": 0.007728,
+          "ram": 0.00103635
+        }
+      },
+      "us-east5": {
+        "regular": {
+          "cpu": 0.029563,
+          "ram": 0.003959
+        },
+        "spot": {
+          "cpu": 0.007154,
+          "ram": 0.000958
+        }
+      },
+      "europe-west2": {
+        "regular": {
+          "cpu": 0.038088,
+          "ram": 0.0051
+        },
+        "spot": {
+          "cpu": 0.0086,
+          "ram": 0.001149
+        }
+      },
+      "europe-central2": {
+        "regular": {
+          "cpu": 0.038088,
+          "ram": 0.0051
+        },
+        "spot": {
+          "cpu": 0.009217,
+          "ram": 0.001234
+        }
+      },
+      "asia-south1": {
+        "regular": {
+          "cpu": 0.019512,
+          "ram": 0.002613
+        },
+        "spot": {
+          "cpu": 0.00307,
+          "ram": 0.00041
+        }
+      },
+      "us-south1": {
+        "regular": {
+          "cpu": 0.03488434,
+          "ram": 0.00467162
+        },
+        "spot": {
+          "cpu": 0.00844172,
+          "ram": 0.00113044
+        }
+      },
+      "northamerica-northeast2": {
+        "regular": {
+          "cpu": 0.032551,
+          "ram": 0.004359
+        },
+        "spot": {
+          "cpu": 0.0067,
+          "ram": 0.000897
+        }
+      },
+      "northamerica-northeast1": {
+        "regular": {
+          "cpu": 0.032551,
+          "ram": 0.004359
+        },
+        "spot": {
+          "cpu": 0.007877,
+          "ram": 0.001055
+        }
+      },
+      "europe-west1": {
+        "regular": {
+          "cpu": 0.032551,
+          "ram": 0.004359
+        },
+        "spot": {
+          "cpu": 0.00511,
+          "ram": 0.000684
+        }
+      },
+      "europe-west4": {
+        "regular": {
+          "cpu": 0.032551,
+          "ram": 0.004359
+        },
+        "spot": {
+          "cpu": 0.00888,
+          "ram": 0.001193
+        }
+      },
+      "asia-northeast1": {
+        "regular": {
+          "cpu": 0.037964,
+          "ram": 0.005084
+        },
+        "spot": {
+          "cpu": 0.009187,
+          "ram": 0.00123
+        }
+      },
+      "us-central1": {
+        "regular": {
+          "cpu": 0.029563,
+          "ram": 0.003959
+        },
+        "spot": {
+          "cpu": 0.00736,
+          "ram": 0.000987
+        }
+      },
+      "europe-west8": {
+        "regular": {
+          "cpu": 0.03429308,
+          "ram": 0.00459244
+        },
+        "spot": {
+          "cpu": 0.00829864,
+          "ram": 0.00111128
+        }
+      },
+      "europe-southwest1": {
+        "regular": {
+          "cpu": 0.03488434,
+          "ram": 0.00467162
+        },
+        "spot": {
+          "cpu": 0.00844172,
+          "ram": 0.00113044
+        }
+      },
+      "europe-west9": {
+        "regular": {
+          "cpu": 0.03429308,
+          "ram": 0.00459244
+        },
+        "spot": {
+          "cpu": 0.00829864,
+          "ram": 0.00111128
+        }
+      },
+      "asia-east2": {
+        "regular": {
+          "cpu": 0.041355,
+          "ram": 0.005538
+        },
+        "spot": {
+          "cpu": 0.010008,
+          "ram": 0.00134
+        }
+      },
+      "us-west8": {
+        "regular": {
+          "cpu": 0.029563,
+          "ram": 0.003959
+        },
+        "spot": {
+          "cpu": 0.00793,
+          "ram": 0.001062
+        }
+      },
+      "asia-northeast3": {
+        "regular": {
+          "cpu": 0.037964,
+          "ram": 0.005084
+        },
+        "spot": {
+          "cpu": 0.009187,
+          "ram": 0.00123
+        }
+      },
+      "asia-south2": {
+        "regular": {
+          "cpu": 0.035508,
+          "ram": 0.004755
+        },
+        "spot": {
+          "cpu": 0.0073,
+          "ram": 0.000978
+        }
+      },
+      "africa-south1": {
+        "regular": {
+          "cpu": 0.0386684,
+          "ram": 0.005178372
+        },
+        "spot": {
+          "cpu": 0.008197236,
+          "ram": 0.001097412
+        }
+      }
+    },
+    "t2a": {
+      "asia-southeast1": {
+        "regular": {
+          "cpu": 0.03072,
+          "ram": 0.00419
+        },
+        "spot": {
+          "cpu": 0.00915,
+          "ram": 0.001246
+        }
+      },
+      "europe-west4": {
+        "regular": {
+          "cpu": 0.02616409,
+          "ram": 0.00357
+        },
+        "spot": {
+          "cpu": 0.008223,
+          "ram": 0.001122
+        }
+      },
+      "us-central1": {
+        "regular": {
+          "cpu": 0.0249,
+          "ram": 0.0034
+        },
+        "spot": {
+          "cpu": 0.00596,
+          "ram": 0.000813
+        }
+      }
+    }
+  }
+}

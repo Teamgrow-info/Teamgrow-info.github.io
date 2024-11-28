@@ -58,6 +58,10 @@ nav a {
     font-size: 1em;
 }
 
+.large-emoji {
+    font-size: 50px; /* Adjust the size as needed */
+  }
+
 .hero {
     text-align: center;
     padding: 30px 20px;

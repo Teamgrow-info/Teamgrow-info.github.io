@@ -60,8 +60,11 @@ nav a {
 
 .hero {
     text-align: center;
-    padding: 100px 20px;
+    padding: 30px 20px;
     background-color: #f0f4ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero h1 {
@@ -70,6 +73,8 @@ nav a {
 }
 
 .hero p {
+    text-align: left;
+    width: 60%;
     font-size: 1.2em;
     margin-bottom: 30px;
 }

@@ -83,6 +83,36 @@ nav a {
     margin-bottom: 30px;
 }
 
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.testimonials h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    width: 45%;
+    box-sizing: border-box;
+}
+
+.testimonial img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
 @media (max-width: 1024px) {
     .hero h1 {
         font-size: 2.5em;

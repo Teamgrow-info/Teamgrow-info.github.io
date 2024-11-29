@@ -131,6 +131,35 @@ nav a {
     .feature-item {
         width: 100%;
     }
+    .testimonial {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        margin: 10px 0;
+    }
+    .testimonial img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 425px) {
+    header {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+    nav {
+        margin-top: 15px;
+    }
+    .testimonial {
+        width: 100%;
+        margin: 10px 0;
+        box-sizing: border-box;
+    }
+    .testimonial p {
+        font-size: 0.9em;
+    }
 }
 
 @media (max-width: 320px) {

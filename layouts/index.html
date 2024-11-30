@@ -1,23 +1,4 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Cloud Whisperer - FinOps, DevSecOps, and DevOps for GCP and Kubernetes</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-
-<header>
-    <h1><span class="large-emoji" alt="audit">🤠</span>The Cloud Whisperer</h1>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Blog</a>
-        <a href="#">Cost Optimization</a>
-        <a href="#">GCP Consulting</a>
-        <a href="#">Kubernetes Consulting</a>        
-        <a href="#" class="button">Contact</a>
-    </nav>
-</header>
+{{ define "main" }}
 
 <section class="hero">
     <h1>We help businesses reduce their Google Cloud Platform costs by 10-75%</h1>
@@ -50,18 +31,33 @@
 <section class="testimonials">
     <h2>Client Testimonials</h2>
     <div class="testimonial">
-        <img src="pics/marches_publics_com_logo.jpeg">
+        {{ with resources.Get "images/marches_publics_logo.jpeg" }}
+          {{ with resources.Copy "images/marches_publics_logo.jpeg" . }}
+        <img src="{{ .RelPermalink }}">
+          {{ end }}
+        {{ end }}
         <p><strong><a href="https://www.linkedin.com/in/trankha/">Kha Tran</a> (CEO @ Publictrade):</strong> "[The Cloud Whisperer provides their] devops and GCP expertise and skills to <span style="color: #800020; font-weight: bold; text-decoration: underline;">reduce by a factor of 5 the cost of our GCP infrastructure</span> !"</p>
     </div>
     <div class="testimonial">
-        <img src="pics/powerspace_logo.jpeg">
+        {{ with resources.Get "images/powerspace_logo.jpeg" }}
+          {{ with resources.Copy "images/powerspace_logo.jpeg" . }}
+          <img src="{{ .RelPermalink }}">
+          {{ end }}
+        {{ end }}
         <p><strong><a href="https://www.linkedin.com/in/romain-lavancier/">Romain Lavancier</a> (CTO @ Powerspace):</strong> "The Cloud Whisperer assisted us in evaluating our costs on GCP. Thanks to the caching strategy prototype they proposed and implemented, <span style="color: #800020; font-weight: bold; text-decoration: underline;">we are currently in the process of reducing our costs by more than 30%</span>."</p>
     </div>
     <div class="testimonial">
-        <img src="pics/equeum_logo.jpeg">
+        {{ with resources.Get "images/equeum_logo.jpeg" }}
+          {{ with resources.Copy "images/equeum_logo.jpeg" . }}
+          <img src="{{ .RelPermalink }}">
+          {{ end }}
+        {{ end }}
         <p><strong><a href="https://www.linkedin.com/in/dbittern/">Diana Bittern</a> (COO @ Equeum):</strong> "[The Cloud Whisperer] consistently demonstrated a determination to solving problem [by] reducing the complexity of our configuration files, discovering security gaps, and addressing them either directly or <span style="color: #800020; font-weight: bold; text-decoration: underline;">through recommendations for cost-effective solutions</span>."</p>
     </div>
 </section>
 
-</body>
-</html>
+<section class="blog-entries">
+
+</section>
+
+{{ end }}

@@ -1,0 +1,8 @@
+baseURL: 'https://teamgrow.info/'
+languageCode: 'en-us'
+title: 'The Cloud Whisperer - FinOps, DevSecOps, and DevOps for GCP and Kubernetes'
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

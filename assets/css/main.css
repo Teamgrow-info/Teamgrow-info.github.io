@@ -1,5 +1,14 @@
+:root {
+    --primary-color: #2563eb;
+    --text-color: #1f2937;
+    --background-color: #ffffff;
+    --secondary-background: #f3f4f6;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
     margin: 0;
     padding: 0;
     background-color: #FFFFFF;
@@ -8,20 +17,39 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
+
 header {
+    background-color: var(--background-color);
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background-color: #f9fafb;
 }
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
 nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
     margin: 0 15px;
     text-decoration: none;
     color: #333;
     padding: 10px 0;
     display: inline-block;
 }
+
+nav a:hover {
+    text-decoration: underline;
+}
+
 .button {
     background-color: #ffcd38;
     color: #333;
@@ -29,40 +57,48 @@ nav a {
     text-decoration: none;
     border-radius: 5px;
 }
+
 .logos {
     display: flex;
     justify-content: center;
     padding: 20px 0;
     background-color: #fff;
 }
+
 .logos img {
     margin: 0 10px;
 }
+
 .features {
     text-align: center;
     padding: 50px 20px;
 }
+
 .feature-item {
     display: inline-block;
     width: 200px;
     margin: 20px;
 }
+
 .feature-item img {
     width: 50px;
     height: 50px;
     margin-bottom: 10px;
 }
+
 .feature-item h3 {
     font-size: 1.2em;
     margin-bottom: 10px;
 }
+
 .feature-item p {
     font-size: 1em;
 }
 
 .large-emoji {
-    font-size: 50px; /* Adjust the size as needed */
-  }
+    font-size: 2rem;
+    margin-right: 0.5rem;
+}
 
 .hero {
     text-align: center;
@@ -169,4 +205,11 @@ nav a {
     .hero p {
         font-size: 1em;
     }
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--secondary-background);
+    margin-top: 4rem;
 }

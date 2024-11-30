@@ -1,0 +1,29 @@
+{{ define "main" }}
+<div class="content">
+    {{ .Content }}
+    
+    {{ if eq .RelPermalink "/posts/" }}
+    <h2>All Posts</h2>
+    <ul class="post-list">
+        {{ range .Pages }}
+        <li class="post-item">
+            <h3 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            <div class="post-meta">
+                <time>{{ .Date.Format "January 2, 2006" }}</time>
+                {{ with .Params.tags }}
+                <span class="tags">
+                    {{ range . }}
+                    <span class="tag">{{ . }}</span>
+                    {{ end }}
+                </span>
+                {{ end }}
+            </div>
+            {{ with .Description }}
+            <p>{{ . }}</p>
+            {{ end }}
+        </li>
+        {{ end }}
+    </ul>
+    {{ end }}
+</div>
+{{ end }}

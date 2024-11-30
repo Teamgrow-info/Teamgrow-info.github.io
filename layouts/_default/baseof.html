@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ block "title" . }}{{ with .Params.Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+    {{ with resources.Get "css/main.css" }}
+      {{ with resources.Copy "css/main.css" . }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}">
+      {{ end }}
+    {{ end }}
+</head>
+<body>
+
+{{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
+
+{{ block "main" . }}{{ end }}
+
+{{ block "footer" . }}{{ partial "site-footer.html" . }}{{ end }}
+
+</body>
+</html>

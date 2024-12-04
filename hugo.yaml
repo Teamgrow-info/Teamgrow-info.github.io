@@ -10,3 +10,5 @@ markup:
 services:
   googleAnalytics:
     id: G-GEVQ8N4E5S
+
+enableRobotsTXT: true

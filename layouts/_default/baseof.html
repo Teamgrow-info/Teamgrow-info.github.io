@@ -40,5 +40,11 @@
 
 {{ block "footer" . }}{{ partial "site-footer.html" . }}{{ end }}
 
+{{ with resources.Get "js/counter.js" }}
+  {{ with resources.Copy "js/counter.js" . }}
+<script src="{{ .RelPermalink }}"></script>
+  {{ end }}
+{{ end }}
+
 </body>
 </html>

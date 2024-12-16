@@ -98,6 +98,28 @@
     </div>
 </section>
 
+<section class="savings-model">
+    <h2>Your Savings Journey</h2>
+    <div class="savings-content">
+        <div class="savings-description">
+            <p>Watch your savings grow month by month. Here's how our partnership evolves:</p>
+            <ul>
+                <li>Month 1: 20% savings - Split 50/50</li>
+                <li>Month 2: 40% savings - Split 50/50</li>
+                <li>Month 3: 70% savings - Split 50/50</li>
+                <li>Months 4-12: 70% savings - 100% yours</li>
+            </ul>
+        </div>
+        <div class="savings-graph">
+            {{ with resources.Get "images/graph.png" }}
+              {{ with resources.Copy "images/graph.png" . }}
+                <img src="{{ .RelPermalink }}" alt="Savings progression graph showing monthly savings distribution" class="graph-image">
+              {{ end }}
+            {{ end }}
+        </div>
+    </div>
+</section>
+
 <section class="cta-section">
     <div class="cta-content">
         <h2>Ready to Optimize Your GCP Infrastructure?</h2>

@@ -43,3 +43,18 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(statElement);
     });
 });
+
+// Header shadow on scroll
+document.addEventListener('DOMContentLoaded', () => {
+    const header = document.querySelector('header');
+    const addHeaderShadow = () => {
+        if (window.scrollY > 10) {
+            header.style.boxShadow = '0 2px 8px rgba(0,0,0,0.1)';
+        } else {
+            header.style.boxShadow = 'none';
+        }
+    };
+    
+    window.addEventListener('scroll', addHeaderShadow);
+    addHeaderShadow(); // Initial check
+});

@@ -56,6 +56,13 @@
 <section id="case-study" class="case-study">
     <h2>Case Study: Marches publics.com</h2>
     <div class="case-study-content">
+        <div class="case-study-header">
+            {{ with resources.Get "images/marches_publics_logo.jpeg" }}
+              {{ with resources.Copy "images/marches_publics_logo.jpeg" . }}
+            <img src="{{ .RelPermalink }}" alt="Marches publics.com logo" class="case-study-logo">
+              {{ end }}
+            {{ end }}
+        </div>
         <div class="case-study-stats">
             <div class="stat-item">
                 <span class="stat-number" data-value="55200" data-style="currency">
@@ -67,10 +74,16 @@
                 <span class="stat-number" data-value="65">
                     <noscript>65%</noscript>
                 </span>
-                <span class="stat-label">% Return on Investment</span>
+                <span class="stat-label">% First Year Return on Investment</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-value="83">
+                    <noscript>83%</noscript>
+                </span>
+                <span class="stat-label">% Following Years Return on Investment</span>
             </div>
         </div>
-        <div class="case-study-details">
+    <div class="case-study-details">
             <h3>The Challenge</h3>
             <p>Marches publics.com needed to optimize their Google Cloud Platform costs while maintaining their service quality.</p>
             
@@ -80,14 +93,6 @@
                 <li>Using spot instances to reduce the costs of the crawlers</li>
                 <li>Use a progressive switch to archive mode on files inside Google Cloud Storage</li>
                 <li>Transform Crawlers as jobs, to only create instances when needed</li>
-            </ul>
-            
-            <h3>The Results</h3>
-            <p>Our optimization strategies led to significant cost reduction while improving system efficiency:</p>
-            <ul>
-                <li>Annual savings of $55,200</li>
-                <li>65% return on investment</li>
-                <li>Maintained service performance (and even increasing stability via the use of jobs for crawlers)</li>
             </ul>
         </div>
     </div>

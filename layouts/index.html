@@ -4,6 +4,13 @@
     <h1>We help businesses reduce their Google Cloud Platform costs by 10-75%</h1>
 </section>
 
+<section class="highlight-box">
+    <div class="highlight-content">
+        <h3>Do you want to know how Marches publics.com saved $55,200 on one year for an annual ROI of 65%?</h3>
+        <a href="#case-study" class="cta-button">Learn More</a>
+    </div>
+</section>
+
 <section class="features">
     <h2>Our Process to Save You Money</h2>
     <div class="features-grid">
@@ -46,16 +53,44 @@
     </div>
 </section>
 
-<section class="testimonials">
-    <h2>Client Testimonials</h2>
-    <div class="testimonial">
-        {{ with resources.Get "images/marches_publics_logo.jpeg" }}
-          {{ with resources.Copy "images/marches_publics_logo.jpeg" . }}
-        <img src="{{ .RelPermalink }}">
-          {{ end }}
-        {{ end }}
-        <p><strong><a href="https://www.linkedin.com/in/trankha/">Kha Tran</a> (CEO @ Publictrade):</strong> "[The Cloud Whisperer provides their] devops and GCP expertise and skills to <span style="color: #800020; font-weight: bold; text-decoration: underline;">reduce by a factor of 5 the cost of our GCP infrastructure</span> !"</p>
+<section id="case-study" class="case-study">
+    <h2>Case Study: Marches publics.com</h2>
+    <div class="case-study-content">
+        <div class="case-study-stats">
+            <div class="stat-item">
+                <span class="stat-number">$55,200</span>
+                <span class="stat-label">Annual Savings</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">65%</span>
+                <span class="stat-label">Return on Investment</span>
+            </div>
+        </div>
+        <div class="case-study-details">
+            <h3>The Challenge</h3>
+            <p>Marches publics.com needed to optimize their Google Cloud Platform costs while maintaining their service quality.</p>
+            
+            <h3>Our Solution</h3>
+            <p>Through careful analysis and optimization of their cloud resources, we implemented:</p>
+            <ul>
+                <li>Using spot instances to reduce the costs of the crawlers</li>
+                <li>Use a progressive switch to archive mode on files inside Google Cloud Storage</li>
+                <li>Transform Crawlers as jobs, to only create instances when needed</li>
+            </ul>
+            
+            <h3>The Results</h3>
+            <p>Our optimization strategies led to significant cost reduction while improving system efficiency:</p>
+            <ul>
+                <li>Annual savings of $55,200</li>
+                <li>65% return on investment</li>
+                <li>Maintained service performance (and even increasing stability via the use of jobs for crawlers)</li>
+            </ul>
+        </div>
     </div>
+</section>
+
+<section class="testimonials">
+    <h2>Other client Testimonials</h2>
     <div class="testimonial">
         {{ with resources.Get "images/powerspace_logo.jpeg" }}
           {{ with resources.Copy "images/powerspace_logo.jpeg" . }}
